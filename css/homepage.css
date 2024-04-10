@@ -1,0 +1,137 @@
+#homepage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+#homepage > p {
+    font-size: 2vh;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+#homepage h1 {
+    font-size: 4.5vh;
+}
+
+#homepage > .browserTopInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14%;
+    background-color: var(--white);
+}
+
+#home1 {
+    height: 33%;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#homeImg1 {
+    background-image: url("../media/nalle-puh-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 74%;
+    width: 39%;
+    position: absolute;
+    right: 0px;
+    bottom: 25px;
+}
+
+#home2 {
+    background-color: var(--white);;
+    height: 31%;
+    display: flex;
+ }
+
+#home2Box > h2 {
+    font-size: 2.4vh;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+#home2Box {
+    align-self: center;
+    width: 100%;
+}
+
+#scrollContainer {
+    display: flex;
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    width: 100%;
+}
+
+#scrollContainer > p {
+    text-align: center;
+}
+
+.scrollImg {
+    height: 150px;
+    width: 100px;
+    text-align: center;
+}
+.scrollImg > p {
+    margin-top: 10px;
+}
+.scrollImg > div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+}
+
+#nallePuhHomeImg {
+    background-image: url("../media/character-nalle-puh.png");
+}
+#iorHomeImg {
+    background-image: url("../media/character-i-or.png");
+}
+#tigerHomeImg {
+    background-image: url("../media/character-tiger.png");
+}
+#nasseHomeImg {
+    background-image: url("../media/character-nasse.png");
+}
+#kaninHomeImg {
+    background-image: url("../media/character-kanin.png");
+}
+#ruHomeImg {
+    background-image: url("../media/character-ru.png");
+}
+#scrollContainer > :last-child {
+    padding-right: 25px;
+}
+#scrollContainer > :first-child {
+    padding-left: 25px;
+}
+
+#home3 {
+    height: 19%;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+#start {
+    background-color: var(--orange);
+    width: 50%;
+    height: 30%;
+    font-size: 2vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
