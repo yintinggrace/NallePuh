@@ -1,3 +1,4 @@
+// renderTipPopUp(1)
 
 function renderTipPopUp(questId) {
 
