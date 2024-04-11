@@ -4,6 +4,8 @@ function renderTipPopUp(questId) {
 
     const questObject = data.find(element => element.id === questId);
 
+    // här måste vi fixa så att den läggs som en overlay och inte rensar html
+
     body.innerHTML = `
         <div id="overlay">
         <div id="popUp">

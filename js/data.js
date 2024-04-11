@@ -206,6 +206,6 @@ const data = [{
     tip: "WOW! Jag blev så hungrig av allt dansande, tur att jag har gömt Nalle Puhs goda honung på baksidan av barnscenen, uppe vid kullen vid ett av träden viskar Tiger till dig. Nämn inget till Nalle Puh, men jag åt lite tidigare idag också. Det var nog den som gav mig så mycket energi.",
     nameOfPreviousCharacter: "I-or",
     map: "??"
-},]
+}]
 
 // jag tänker att tipset som gäller Ru får ligga under Ru och inte I-or. Alltså den det gäller, inte den som ger tipset.

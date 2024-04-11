@@ -1,0 +1,40 @@
+#closeCrossBtn {
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+    background-image: url(/media/close.png);
+    height: 2.5vh;
+    width: 2.5vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#characterTextContainer {
+    padding: 100px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#characterName {
+    font-family: piglet;
+    font-size: 5vh;
+    margin: 0;
+}
+
+#characterDescription {
+    font-family: "Inter", sans-serif;
+    font-size: 2vh;
+    margin-top: 0;
+}
+
+#characterImage {
+    position: absolute;
+    left: 23%;
+    top: 55%;
+    height: 50vh;
+    width: 80vw;
+    background-position: top left;
+    background-size: cover;
+}
