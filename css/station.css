@@ -35,3 +35,23 @@
   font-size: 30px;
 }
 
+.question-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.alternatives-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.alternative-button img {
+  width: 38vw;
+}
+
+.alternative-text {
+  height: 20vh;
+  font-size: 50px;
+}
