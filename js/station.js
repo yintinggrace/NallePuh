@@ -29,6 +29,7 @@ function createAlternatives(currentContent) {
   const alternativesDiv = document.createElement('div');
   alternativesDiv.classList = "alternatives";
   const alternativeType = currentContent.alternativeType;
+  shuffleArray(alternatives);
 
   if (alternativeType === "text") {
     alternatives.forEach((alternative) => {
@@ -49,6 +50,13 @@ function createAlternatives(currentContent) {
   }
 
   return alternativesDiv.innerHTML;
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }
 
 function createButtonGroup(iconClass, text) {
