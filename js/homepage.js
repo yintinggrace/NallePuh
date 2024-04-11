@@ -42,5 +42,12 @@ body.innerHTML = `
             <p>Hjälp Nalle Puh och hand vänner genom att genomföra skattjakten</p>
             <button id="start">Starta</button>
         </div>
+
+        <button id="to-station">Station</button>
     </container>
 `;
+
+const toStation = document.getElementById('to-station');
+toStation.addEventListener('click', function() {
+    displayContent(currentIndex);
+});
