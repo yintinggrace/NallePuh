@@ -5,3 +5,33 @@
   background-color: var(--whitegrey);
 }
 
+.station-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-container {
+  padding: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-question,
+.fa-map-marker-alt,
+.fa-paw {
+  color: white;
+  font-size: 30px;
+}
+
