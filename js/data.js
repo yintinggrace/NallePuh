@@ -1,53 +1,52 @@
 const data = [{
     id: 0,
-    questDescription: "Börja resan i kiosken där I-or är! I-or känner sig deppig och ledsen, som vanligt, hur ska du muntra upp honom? I-or berättar att han har tandvärk och att han behöver något som hjälper mot det, eftersom ni är vid kiosken kanske du kan ge förslag på en glass som skulle kunna lindra hans tandvärk. I-or har tidigare berättat han blir glad av färgen grön.",
+    questDescription: "Börja resan i kiosken där I-or är! I-or känner sig deppig och ledsen, som vanligt, hur ska du muntra upp honom? I-or berättar att han har tandvärk och att han behöver något som hjälper mot det, eftersom ni är vid kiosken kanske du kan ge förslag på en glass som skulle kunna lindra hans tandvärk. ",
     alternativeType: "image",
     alternatives: [
         {
             id: 0,
-            imgSrc: "sökväg",
-            correct: true
+            imgSrc: "ice-cream-calippo-cola.png",
+            correct: false
         }, {
             id: 1,
-            imgSrc: "sökväg",
+            imgSrc: "ice-cream-daimstrut.png",
             correct: false
         }, {
             id: 2,
-            imgSrc: "sökväg",
-            correct: false
+            imgSrc: "ice-cream-piggelin.png",
+            correct: true
         }, {
             id: 3,
-            imgSrc: "sökväg",
+            imgSrc: "ice-cream-magnum.png",
             correct: false
         }
     ],
     character: {
         name: "I-or",
-        description: "I-or  är en nedstämd, men snäll och pessimistisk åsna. Han är känd för sin oro och filosofiska tankar samt sin ironiska humor. I-or har en negativ syn på det mesta och tror att det värsta alltid kommer att hända. Trots det är han också intelligent och ger kloka råd. När han talar har han en monoton och lugn röst och använder sig av korta meningar.",
+        description: "I-or är en nedstämd, men snäll och pessimistisk åsna. Han är känd för sin oro och filosofiska tankar samt sin ironiska humor. I-or har en negativ syn på det mesta och tror att det värsta alltid kommer att hända. Trots det är han också intelligent och ger kloka råd. När han talar har han en monoton och lugn röst och använder sig av korta meningar.",
         imgSrc: ""
     },
     map: "??"
-
 }, {
     id: 1,
-    questDescription: "Nämen! Är du här, utbrister Ru. Utmärkt, jag har inte sett någon honung för jag är upptagen med att titta på djuren. Jag älskar alla djur, om du svarar på vilka dina 3 favoritdjur är så kan jag ge dig ett tips om var honungen kan vara.",
-    alternativeType: "text",
+    questDescription: "Nämen! Är du här, utbrister Ru. Utmärkt, jag har inte sett någon honung för jag är upptagen med att titta på djuren. Jag älskar alla djur, om du svarar på vilket djur som är mitt favoritdjur så kan jag ge dig ett tips om var honungen kan vara.",
+    alternativeType: "image",
     alternatives: [
         {
             id: 0,
-            text: "",
-            correct: true
-        }, {
-            id: 1,
-            text: "",
+            imgSrc: "animal-butterfly.jpeg",
             correct: false
         }, {
+            id: 1,
+            imgSrc: "animal-monkey.png",
+            correct: true
+        }, {
             id: 2,
-            text: "",
+            imgSrc: "animal-cat.jpeg",
             correct: false
         }, {
             id: 3,
-            text: "",
+            imgSrc: "animal-red-panda.jpg",
             correct: false
         }
     ],
@@ -61,24 +60,24 @@ const data = [{
     map: "??"
 }, {
     id: 2,
-    questDescription: "Hejsan, säger Nasse. Nasse är väldigt nervös för tillfället och kan inte föra ett samtal. När du frågar honom om honungsburken blir han ännu mer förtvivlad. Hitta ett sätt att hjälpa Nasse att lugna ner sig innan du frågar honom igen. Du vet att Nasse gillar trädgårdsarbete och blommor.Låt Nasse känna lukten av tre blommor och ge honom namnen på dessa tre blommor.",
+    questDescription: "Hejsan, säger Nasse. Nasse är väldigt nervös för tillfället och kan inte föra ett samtal. När du frågar honom om honungsburken blir han ännu mer förtvivlad. Hitta ett sätt att hjälpa Nasse att lugna ner sig innan du frågar honom igen. Du vet att Nasse gillar blommor. Låt Nasse känna lukten av hans favoritblomma.",
     alternativeType: "image",
     alternatives: [
         {
             id: 0,
-            imgSrc: "sökväg",
+            imgSrc: "flower-maskros.jpeg",
             correct: true
         }, {
             id: 1,
-            imgSrc: "sökväg",
+            imgSrc: "flower-lilja.jpeg",
             correct: false
         }, {
             id: 2,
-            imgSrc: "sökväg",
+            imgSrc: "flower-tulpaner.jpeg",
             correct: false
         }, {
             id: 3,
-            imgSrc: "sökväg",
+            imgSrc: "flower-vitsippa.jpeg",
             correct: false
         }
     ],
@@ -87,7 +86,7 @@ const data = [{
         description: "Nasse är Nalle Puhs bästa vän och är mycket glad för att ställa olika frågor till Nalle Puh. Han karakteriseras av att ofta vara ängslig och att vara rädd för nästan allt samt att han lider av ångest. Däremot ställer han alltid upp för sina vänner och har ett stort mod och lojalitet för dem. Nasses favoritmat är hallon",
         imgSrc: ""
     },
-    tip: "Jag är ledsen att jag inte kunde hjälpa dig, men Nasse är bästa vän till Nalle Puh, så han borde veta var den är? Nasse befinner sig ofta i trädgården, kolla där!",
+    tip: "Du klickade rätt! Jag är ledsen att jag inte kunde hjälpa dig, men Nasse är bästa vän till Nalle Puh, så han borde veta var den är? Nasse befinner sig ofta i trädgården, kolla där!",
     nameOfPreviousCharacter: "I-or",
     map: "??",
 }, {
@@ -97,20 +96,21 @@ const data = [{
     alternatives: [
         {
             id: 0,
-            text: "",
-            correct: true
+            text: "6",
+            correct: false
         }, {
             id: 1,
-            text: "",
+            text: "9",
             correct: false
         }, {
             id: 2,
-            text: "",
+            text: "18",
+
             correct: false
         }, {
             id: 3,
-            text: "",
-            correct: false
+            text: "14",
+            correct: true
         }
     ],
     character: {
@@ -122,67 +122,38 @@ const data = [{
     map: "??"
 }, {
     id: 4,
-    questDescription: "Tjohooo skriker Tiger högt! Du kommer fram till ingången till barnscenen där Tiger försöker dansa sig in på barnscenen. Tiger är i sin egen värld och har inte tid att uppmärksamma dig och dina frågor med honungsburken. Du behöver därför lugna ner Tiger. Detta gör du enklast genom att dansa med Tiger för att få ut hans energi. Dansa med honom och skriv ner antalet hopp som du tror Tiger tog med sin svans under tiden ni dansade tillsammans.",
+    questDescription: "Tjohooo skriker Tiger högt! Du kommer fram till ingången till barnscenen där Tiger försöker dansa sig in på barnscenen. Tiger är i sin egen värld och har inte tid att uppmärksamma dig och dina frågor med honungsburken. Du behöver därför lugna ner Tiger. Detta gör du enklast genom att dansa med Tiger för att få ut hans energi. Dansa med honom och klicka på det antalet hopp som du tror Tiger tog med sin svans under tiden ni dansade tillsammans.",
     alternativeType: "text",
     alternatives: [
         {
             id: 0,
-            text: "",
-            correct: true
+            text: "50",
+            correct: false
         }, {
             id: 1,
-            text: "",
+            text: "10",
             correct: false
         }, {
             id: 2,
-            text: "",
+            text: "17",
             correct: false
         }, {
             id: 3,
-            text: "",
-            correct: false
+            text: "20",
+            correct: true
         }
     ],
     character: {
         name: "Tiger",
-        description: "Tiger är självcentrerad och självsäker, han tycker om att skutta och är känd för sin energiska natur. Han är också väldigt överdriven och impulsiv. Tiger är också känd för att ha en stor personlighet som ofta är i centrum och får mycket uppmärksamhet för sin höga energinivå. Han tänker oftast inte på konsekvenserna och har en tendens att använda invecklade ord, även om han inte förstår deras betydelse."
-    },
-    tip: "Jag ser inte honungsburken i något hål här. Nalle Puh kollade på uppträdanden tidigare idag på barnens scen, kan honungen kanske vara där?",
-    nameOfPreviousCharacter: "I-or",
-    map: "??"
-}, {
-    id: 4,
-    questDescription: "Tjohooo skriker Tiger högt! Du kommer fram till ingången till barnscenen där Tiger försöker dansa sig in på barnscenen. Tiger är i sin egen värld och har inte tid att uppmärksamma dig och dina frågor med honungsburken. Du behöver därför lugna ner Tiger. Detta gör du enklast genom att dansa med Tiger för att få ut hans energi. Dansa med honom och skriv ner antalet hopp som du tror Tiger tog med sin svans under tiden ni dansade tillsammans.",
-    alternativeType: "text",
-    alternatives: [
-        {
-            id: 0,
-            text: "",
-            correct: true
-        }, {
-            id: 1,
-            text: "",
-            correct: false
-        }, {
-            id: 2,
-            text: "",
-            correct: false
-        }, {
-            id: 3,
-            text: "",
-            correct: false
-        }
-    ],
-    character: {
-        name: "Tiger",
-        description: "Tiger är självcentrerad och självsäker, han tycker om att skutta och är känd för sin energiska natur. Han är också väldigt överdriven och impulsiv. Tiger är också känd för att ha en stor personlighet som ofta är i centrum och får mycket uppmärksamhet för sin höga energinivå. Han tänker oftast inte på konsekvenserna och har en tendens att använda invecklade ord, även om han inte förstår deras betydelse."
+        description: "Tiger är självcentrerad och självsäker, han tycker om att skutta och är känd för sin energiska natur. Han är också väldigt överdriven och impulsiv. Tiger är också känd för att ha en stor personlighet som ofta är i centrum och får mycket uppmärksamhet för sin höga energinivå. Han tänker oftast inte på konsekvenserna och har en tendens att använda invecklade ord, även om han inte förstår deras betydelse.",
+        imgSrc: ""
     },
     tip: "Jag ser inte honungsburken i något hål här. Nalle Puh kollade på uppträdanden tidigare idag på barnens scen, kan honungen kanske vara där?",
     nameOfPreviousCharacter: "I-or",
     map: "??"
 }, {
     id: 5,
-    questDescription: "Nu har du äntligen hittat Nalle Puhs honung. Klick på bilden var du hittade honungen? ",
+    questDescription: "Nu har du äntligen hittat Nalle Puhs honung. Klicka på den bilden som liknar stället som du hittade honungen på för att säkerställa att du verkligen hittade Nalle Puhs honung.",
     alternativeType: "image",
     alternatives: [
         {
