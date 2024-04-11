@@ -1,0 +1,57 @@
+.station-main {
+  padding: 30px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--whitegrey);
+}
+
+.station-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-container {
+  padding: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-question,
+.fa-map-marker-alt,
+.fa-paw {
+  color: white;
+  font-size: 30px;
+}
+
+.question-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.alternatives-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.alternative-button img {
+  width: 38vw;
+}
+
+.alternative-text {
+  height: 20vh;
+  font-size: 50px;
+}
