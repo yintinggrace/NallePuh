@@ -1,0 +1,7 @@
+.station-main {
+  padding: 30px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--whitegrey);
+}
+
