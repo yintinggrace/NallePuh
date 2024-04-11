@@ -1,4 +1,4 @@
-[{
+const data = [{
     id: 0,
     questDescription: "Börja resan i kiosken där I-or är! I-or känner sig deppig och ledsen, som vanligt, hur ska du muntra upp honom? I-or berättar att han har tandvärk och att han behöver något som hjälper mot det, eftersom ni är vid kiosken kanske du kan ge förslag på en glass som skulle kunna lindra hans tandvärk. I-or har tidigare berättat han blir glad av färgen grön.",
     alternativeType: "image",
@@ -57,6 +57,7 @@
         imgSrc: ""
     },
     tip: "Tack så mycket för tipset om glassen, den verkar jättegod! Jag har däremot inte sett honungsburken men såg Ru borta vid terrariet innan. Jag vill helst inte vistas bland djuren, men har hört att djuren där är mycket förtjusta i honung. Kanske de har tagit och smakat lite på Nalle Puhs honung?",
+    nameOfPreviousCharacter: "I-or",
     map: "??"
 }, {
     id: 2,
@@ -87,6 +88,7 @@
         imgSrc: ""
     },
     tip: "Jag är ledsen att jag inte kunde hjälpa dig, men Nasse är bästa vän till Nalle Puh, så han borde veta var den är? Nasse befinner sig ofta i trädgården, kolla där!",
+    nameOfPreviousCharacter: "I-or",
     map: "??",
 }, {
     id: 3,
@@ -116,6 +118,7 @@
         description: "Kanin är känd för att vara organiserad och tar alltid ledarrollen inom sin vängrupp. Han gillar att göra planer, arrangera sammankomster och evenemang, samt att odla. När saker inte går enligt Kanins planer eller hans vänner stör hans scheman blir han ofta irriterad och frustrerad. Han har en stark önskan om kontroll och förutsägbarhet."
     },
     tip: "Jag vet att honungsburken en gång satt fast i ett hål. Minigolfen har många hål i marken, kika där!",
+    nameOfPreviousCharacter: "I-or",
     map: "??"
 }, {
     id: 4,
@@ -145,6 +148,7 @@
         description: "Tiger är självcentrerad och självsäker, han tycker om att skutta och är känd för sin energiska natur. Han är också väldigt överdriven och impulsiv. Tiger är också känd för att ha en stor personlighet som ofta är i centrum och får mycket uppmärksamhet för sin höga energinivå. Han tänker oftast inte på konsekvenserna och har en tendens att använda invecklade ord, även om han inte förstår deras betydelse."
     },
     tip: "Jag ser inte honungsburken i något hål här. Nalle Puh kollade på uppträdanden tidigare idag på barnens scen, kan honungen kanske vara där?",
+    nameOfPreviousCharacter: "I-or",
     map: "??"
 }, {
     id: 4,
@@ -174,6 +178,7 @@
         description: "Tiger är självcentrerad och självsäker, han tycker om att skutta och är känd för sin energiska natur. Han är också väldigt överdriven och impulsiv. Tiger är också känd för att ha en stor personlighet som ofta är i centrum och får mycket uppmärksamhet för sin höga energinivå. Han tänker oftast inte på konsekvenserna och har en tendens att använda invecklade ord, även om han inte förstår deras betydelse."
     },
     tip: "Jag ser inte honungsburken i något hål här. Nalle Puh kollade på uppträdanden tidigare idag på barnens scen, kan honungen kanske vara där?",
+    nameOfPreviousCharacter: "I-or",
     map: "??"
 }, {
     id: 5,
@@ -199,6 +204,7 @@
         }
     ],
     tip: "WOW! Jag blev så hungrig av allt dansande, tur att jag har gömt Nalle Puhs goda honung på baksidan av barnscenen, uppe vid kullen vid ett av träden viskar Tiger till dig. Nämn inget till Nalle Puh, men jag åt lite tidigare idag också. Det var nog den som gav mig så mycket energi.",
+    nameOfPreviousCharacter: "I-or",
     map: "??"
 },]
 

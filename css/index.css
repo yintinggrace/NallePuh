@@ -1,8 +1,15 @@
+@font-face {
+    font-family: piglet;
+    src: url(/media/Piglet.ttf);
+}
+
 :root {
     --white: #ffffff;
     --black: #000000;
     --whitegrey: #F7F7F7;
     --orange: #FFC758;
+    --buttonHeight: 55px;
+    --lineHeight: 1.4375em;
 }
 
 
@@ -11,4 +18,8 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--whitegrey);
+}
+
+p {
+    line-height: var(--lineHeight);
 }
