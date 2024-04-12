@@ -1,8 +1,13 @@
 let currentIndex = 0;
 
-function displayContent(index) {
-    const currentContent = data[index];
+const toStation = document.getElementById('to-station');
+toStation.addEventListener('click', function() {
+  const currentContent = data[currentIndex];
+  displayContent(currentContent);
+  createAlternatives(currentContent);
+});
 
+function displayContent(currentContent) {
     document.body.innerHTML = `
       <main class="station-main">
         <div class="station-buttons">
@@ -16,9 +21,7 @@ function displayContent(index) {
             ${currentContent.questDescription}
           </p>
 
-          <div class="alternatives-container">
-            ${createAlternatives(currentContent)}
-          </div>
+          <div class="alternatives-container"></div>
         </div>
       </main>
     `;
@@ -26,9 +29,9 @@ function displayContent(index) {
 
 function createAlternatives(currentContent) {
   const alternatives = currentContent.alternatives;
-  const alternativesDiv = document.createElement('div');
-  alternativesDiv.classList = "alternatives";
   const alternativeType = currentContent.alternativeType;
+  const alternativesContainer = document.querySelector(".alternatives-container");
+
   shuffleArray(alternatives);
 
   if (alternativeType === "text") {
@@ -36,7 +39,7 @@ function createAlternatives(currentContent) {
       const button = document.createElement('button');
       button.classList = "alternative-button alternative-text";
       button.innerText = alternative.text;
-      alternativesDiv.appendChild(button);
+      alternativesContainer.appendChild(button);
     });
   } else if (alternativeType === "image") {
     alternatives.forEach((alternative) => {
@@ -45,7 +48,7 @@ function createAlternatives(currentContent) {
       button.classList = "alternative-button alternative-image";
       img.src = "../media/" + alternative.imgSrc;
       button.appendChild(img);
-      alternativesDiv.appendChild(button);
+      alternativesContainer.appendChild(button);
     });
   }
 

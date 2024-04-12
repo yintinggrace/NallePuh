@@ -46,8 +46,3 @@ body.innerHTML = `
         <button id="to-station">Station</button>
     </container>
 `;
-
-const toStation = document.getElementById('to-station');
-toStation.addEventListener('click', function() {
-    displayContent(currentIndex);
-});
