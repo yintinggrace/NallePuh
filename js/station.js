@@ -5,6 +5,11 @@ toStation.addEventListener('click', function() {
   const currentContent = data[currentIndex];
   displayContent(currentContent);
   createAlternatives(currentContent);
+
+  const aboutCharacter = document.querySelector(".fa-paw");
+  aboutCharacter.addEventListener("click", function() {
+    renderCharacterInfo(currentContent.character.name);
+  });
 });
 
 function displayContent(currentContent) {
