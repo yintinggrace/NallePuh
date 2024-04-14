@@ -1,8 +1,5 @@
 let currentIndex = 0;
 
-const toStation = document.getElementById("to-station");
-toStation.addEventListener("click", handleToStationClick);
-
 function handleToStationClick() {
   const currentContent = data[currentIndex];
   displayContent(currentContent);

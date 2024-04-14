@@ -15,14 +15,12 @@
 #homepage h1 {
     font-size: 7vh;
     font-family: piglet;
-    margin-bottom: 0;
-    margin-top: 6vh;
+    margin: 6vh 0 0;
 }
 
 #home1 {
     height: 37%;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin: 0 8%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -41,7 +39,7 @@
     height: 63%;
     width: 39%;
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: 6%;
 }
 
@@ -56,7 +54,7 @@
     width: 100%;
 }
 
-#home2Box>h2 {
+#home2Box > h2 {
     font-size: 2.4vh;
     font-weight: 600;
     margin-left: 8%;
@@ -69,7 +67,7 @@
     width: 100%;
 }
 
-#scrollContainer>p {
+#scrollContainer > p {
     text-align: center;
 }
 
@@ -79,15 +77,13 @@
     text-align: center;
 }
 
-.scrollImg>p {
+.scrollImg > p {
     margin-top: 10px;
 }
 
-.scrollImg>div {
-    background-position: center;
+.scrollImg > div {
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
     height: 100px;
     width: 100px;
 }
@@ -116,18 +112,17 @@
     background-image: url("../media/character-ru.png");
 }
 
-#scrollContainer> :last-child {
+#scrollContainer > :last-child {
     padding-right: 25px;
 }
 
-#scrollContainer> :first-child {
+#scrollContainer > :first-child {
     padding-left: 25px;
 }
 
 #home3 {
     height: 28%;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin: 0 8%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -139,7 +134,7 @@
     bottom: 6%;
 }
 
-#to-station {
+#to-start {
     background-color: var(--orange);
     width: 50%;
     height: 24%;

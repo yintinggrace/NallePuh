@@ -1,4 +1,5 @@
-body.innerHTML = `
+function renderHomePage () {
+    body.innerHTML = `
     <container id="homepage">
         <div id="home1">
             <h1>Hej!</h1>
@@ -39,7 +40,11 @@ body.innerHTML = `
 
         <div id="home3">
             <p>Hjälp Nalle Puh och hans vänner genom att genomföra skattjakten</p>
-            <button id="to-station">Starta</button>
+            <button id="to-start">Starta</button>
         </div>
     </container>
 `;
+
+const toStart = document.getElementById("to-start");
+toStart.addEventListener("click", renderStartPage1);
+}

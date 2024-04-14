@@ -5,9 +5,12 @@
 
 :root {
     --white: #ffffff;
-    --black: #000000;
     --whitegrey: #F7F7F7;
+    --lightgrey: #898989;
+    --darkgrey: #5D5D5D;
+    --black: #000000;
     --orange: #FFC758;
+    --red: #FE7070;
     --buttonHeight: 55px;
     --lineHeight: 1.4375em;
 }
