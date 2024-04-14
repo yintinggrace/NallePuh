@@ -34,7 +34,7 @@ body {
     margin-top: 0;
 }
 
-#closeBtn {
+.closeOrContinueBtn {
     background-color: var(--orange);
     height: var(--buttonHeight);
     width: 100%;

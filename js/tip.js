@@ -1,5 +1,3 @@
-// renderTipPopUp(1)
-
 function renderTipPopUp(questId, tips) {
     const questObject = data.find(element => element.id === questId);
 
@@ -15,18 +13,28 @@ function renderTipPopUp(questId, tips) {
         buttonText = "Stäng";
     }
 
+    const buttonClass = buttonText === "Stäng" ? "closeBtn" : "continue";
+
     body.innerHTML = `
         <div id="overlay">
             <div id="popUp">
                 <p id="tipTitle">Tips från ${titleContent}</p>
                 <p id="tipTextContent">${tipsText}</p>
-                <button id="closeBtn">${buttonText}</button>
+                <button class="${buttonClass} closeOrContinueBtn">${buttonText}</button>
             </div>
         </div>
     `;
 
-    document.querySelector("#closeBtn").addEventListener("click", function test() {
-        body.innerHTML = ``;
-        console.log("här ska vi ladda uppdraget");
+    const closeOrContinueBtns = document.querySelectorAll(`.${buttonClass}`);
+
+    closeOrContinueBtns.forEach(button => {
+        button.addEventListener("click", function() {
+            if (buttonClass === "closeBtn") {
+                currentIndex = questId;
+            } else {
+                currentIndex++;
+            }
+            handleToStationClick();
+        });
     });
 }
