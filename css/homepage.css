@@ -51,15 +51,15 @@
     display: flex;
 }
 
-#home2Box>h2 {
-    font-size: 2.4vh;
-    font-weight: 600;
-    margin-left: 25px;
-}
-
 #home2Box {
     align-self: center;
     width: 100%;
+}
+
+#home2Box>h2 {
+    font-size: 2.4vh;
+    font-weight: 600;
+    margin-left: 8%;
 }
 
 #scrollContainer {
