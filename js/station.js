@@ -1,7 +1,9 @@
 let currentIndex = 0;
 
 const toStation = document.getElementById('to-station');
-toStation.addEventListener('click', function() {
+toStation.addEventListener('click', handleToStationClick);
+
+function handleToStationClick() {
   const currentContent = data[currentIndex];
   displayContent(currentContent);
   createAlternatives(currentContent);
@@ -15,7 +17,7 @@ toStation.addEventListener('click', function() {
   tipsButton.addEventListener("click", function() {
     renderTipPopUp(currentContent.id, "tipsFromPreviousCharacter");
   });
-});
+}
 
 function displayContent(currentContent) {
     document.body.innerHTML = `
