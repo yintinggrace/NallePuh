@@ -5,18 +5,22 @@ const data = [{
     alternatives: [
         {
             id: 0,
+            name: "calippo cola",
             imgSrc: "ice-cream-calippo-cola.png",
             correct: false
         }, {
             id: 1,
+            name: "daimstrut",
             imgSrc: "ice-cream-daimstrut.png",
             correct: false
         }, {
             id: 2,
+            name: "piggelin",
             imgSrc: "ice-cream-piggelin.png",
             correct: true
         }, {
             id: 3,
+            name: "magnum",
             imgSrc: "ice-cream-magnum.png",
             correct: false
         }
@@ -34,18 +38,22 @@ const data = [{
     alternatives: [
         {
             id: 0,
+            name: "fjäril",
             imgSrc: "animal-butterfly.jpeg",
             correct: false
         }, {
             id: 1,
+            name: "apa",
             imgSrc: "animal-monkey.png",
             correct: true
         }, {
             id: 2,
+            name: "katt",
             imgSrc: "animal-cat.jpeg",
             correct: false
         }, {
             id: 3,
+            name: "röd panda",
             imgSrc: "animal-red-panda.jpg",
             correct: false
         }
@@ -65,18 +73,22 @@ const data = [{
     alternatives: [
         {
             id: 0,
+            name: "maskros",
             imgSrc: "flower-maskros.jpeg",
             correct: true
         }, {
             id: 1,
+            name: "lilja",
             imgSrc: "flower-lilja.jpeg",
             correct: false
         }, {
             id: 2,
+            name: "tulpaner",
             imgSrc: "flower-tulpaner.jpeg",
             correct: false
         }, {
             id: 3,
+            name: "vitsippa",
             imgSrc: "flower-vitsippa.jpeg",
             correct: false
         }
