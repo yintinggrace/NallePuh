@@ -8,12 +8,12 @@ function handleToStationClick() {
   displayContent(currentContent);
   createAlternatives(currentContent);
 
-  const aboutCharacter = document.querySelector(".fa-paw");
+  const aboutCharacter = document.querySelector(`.Om.${currentContent.character.name}`);
   aboutCharacter.addEventListener("click", function() {
     renderCharacterInfo(currentContent.character.name);
   });
 
-  const tipsButton = document.querySelector(".fa-question");
+  const tipsButton = document.querySelector(".Tips");
   tipsButton.addEventListener("click", function() {
     renderTipPopUp(currentContent.id, "tipsFromPreviousCharacter");
   });
@@ -121,7 +121,7 @@ function shuffleArray(array) {
 function createButtonGroup(iconClass, text) {
   return `
     <div class="button-group">
-      <div class="icon-container">
+      <div class="icon-container ${text}">
         <i class="${iconClass}"></i>
       </div>${text}
     </div>
