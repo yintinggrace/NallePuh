@@ -7,10 +7,9 @@
     font-family: "Inter", sans-serif;
 }
 
-#homepage>p {
+#homepage p {
     font-size: 2vh;
     font-weight: 500;
-    line-height: 1.4;
 }
 
 #homepage h1 {
@@ -20,38 +19,35 @@
     margin-top: 6vh;
 }
 
-#homepage>.browserTopInput {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 14%;
-    background-color: var(--white);
-}
-
 #home1 {
-    height: 33%;
-    margin-left: 25px;
-    margin-right: 25px;
+    height: 37%;
+    margin-left: 8%;
+    margin-right: 8%;
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+#home1 > p {
+    position: relative;
+    top: 8%;
 }
 
 #homeImg1 {
     background-image: url("../media/nalle-puh-1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 74%;
+    background-position: center;
+    height: 63%;
     width: 39%;
     position: absolute;
     right: 0px;
-    bottom: 25px;
+    bottom: 6%;
 }
 
 #home2 {
     background-color: var(--white);
-    ;
-    height: 31%;
+    height: 35%;
     display: flex;
 }
 
@@ -129,19 +125,24 @@
 }
 
 #home3 {
-    height: 19%;
-    margin-left: 25px;
-    margin-right: 25px;
+    height: 28%;
+    margin-left: 8%;
+    margin-right: 8%;
     display: flex;
     flex-direction: column;
     align-self: center;
     justify-content: center;
 }
 
-#start {
+#home3 > p {
+    position: relative;
+    bottom: 6%;
+}
+
+#to-station {
     background-color: var(--orange);
     width: 50%;
-    height: 30%;
+    height: 24%;
     font-size: 2vh;
     font-family: "Inter", sans-serif;
     font-weight: 500;

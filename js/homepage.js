@@ -1,6 +1,5 @@
 body.innerHTML = `
     <container id="homepage">
-        <div class="browserTopInput">browser top input section</div>
         <div id="home1">
             <h1>Hej!</h1>
             <p>Nalle Puh har tappat bort <br> sin favorithonung! Vad <br> ska han göra nu? Kan du <br> hjälpa honom?</p>
@@ -39,10 +38,8 @@ body.innerHTML = `
         </div>
 
         <div id="home3">
-            <p>Hjälp Nalle Puh och hand vänner genom att genomföra skattjakten</p>
-            <button id="start">Starta</button>
+            <p>Hjälp Nalle Puh och hans vänner genom att genomföra skattjakten</p>
+            <button id="to-station">Starta</button>
         </div>
-
-        <button id="to-station">Station</button>
     </container>
 `;
