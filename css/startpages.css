@@ -87,6 +87,10 @@
     border-radius: 5px;
 }
 
+.back1, .back2 {
+    background-color: var(--white);
+}
+
 .invisible {
     background-color: var(--whitegrey);
 }
