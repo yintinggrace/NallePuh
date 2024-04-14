@@ -10,6 +10,11 @@ toStation.addEventListener('click', function() {
   aboutCharacter.addEventListener("click", function() {
     renderCharacterInfo(currentContent.character.name);
   });
+
+  const tipsButton = document.querySelector(".fa-question");
+  tipsButton.addEventListener("click", function() {
+    renderTipPopUp(currentContent.id, "tipsFromPreviousCharacter");
+  });
 });
 
 function displayContent(currentContent) {
@@ -44,6 +49,7 @@ function createAlternatives(currentContent) {
       const button = document.createElement('button');
       button.classList = "alternative-button alternative-text";
       button.innerText = alternative.text;
+      button.setAttribute("data-id", alternative.id);
       alternativesContainer.appendChild(button);
     });
   } else if (alternativeType === "image") {
@@ -79,7 +85,7 @@ function checkAnswer(event, currentContent) {
   const isCorrect = targetId === correctAlternative.id;
 
   if (isCorrect) {
-    renderTipPopUp(currentContent.id);
+    renderTipPopUp(currentContent.id, "tipsFromCurrentCharacter");
   } else {
     renderTryAgainMessage();
   }
