@@ -59,6 +59,31 @@ function createAlternatives(currentContent) {
     });
   }
 
+  document.querySelectorAll('.alternative-button').forEach(button => {
+    button.addEventListener('click', (event) => {
+      checkAnswer(event, currentContent);
+    });
+  });
+}
+
+function checkAnswer(event, currentContent) {
+  const target = event.target;
+  const targetId = parseInt(target.getAttribute("data-id"));
+
+  const alternatives = currentContent.alternatives;
+
+  const correctAlternative = alternatives.find((alternative) => {
+    return alternative.correct === "true";
+  });
+
+  const isCorrect = targetId === correctAlternative.id;
+
+  if (isCorrect) {
+    renderTipPopUp(currentContent.id);
+  } else {
+    renderTryAgainMessage();
+  }
+}
   return alternativesDiv.innerHTML;
 }
 

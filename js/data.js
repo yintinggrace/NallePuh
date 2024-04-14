@@ -7,22 +7,22 @@ const data = [{
             id: 0,
             name: "calippo cola",
             imgSrc: "ice-cream-calippo-cola.png",
-            correct: false
+            correct: "false"
         }, {
             id: 1,
             name: "daimstrut",
             imgSrc: "ice-cream-daimstrut.png",
-            correct: false
+            correct: "false"
         }, {
             id: 2,
             name: "piggelin",
             imgSrc: "ice-cream-piggelin.png",
-            correct: true
+            correct: "true"
         }, {
             id: 3,
             name: "magnum",
             imgSrc: "ice-cream-magnum.png",
-            correct: false
+            correct: "false"
         }
     ],
     character: {
@@ -40,22 +40,22 @@ const data = [{
             id: 0,
             name: "fjäril",
             imgSrc: "animal-butterfly.jpeg",
-            correct: false
+            correct: "false"
         }, {
             id: 1,
             name: "apa",
             imgSrc: "animal-monkey.png",
-            correct: true
+            correct: "true"
         }, {
             id: 2,
             name: "katt",
             imgSrc: "animal-cat.jpeg",
-            correct: false
+            correct: "false"
         }, {
             id: 3,
             name: "röd panda",
             imgSrc: "animal-red-panda.jpg",
-            correct: false
+            correct: "false"
         }
     ],
     character: {
@@ -75,22 +75,22 @@ const data = [{
             id: 0,
             name: "maskros",
             imgSrc: "flower-maskros.jpeg",
-            correct: true
+            correct: "true"
         }, {
             id: 1,
             name: "lilja",
             imgSrc: "flower-lilja.jpeg",
-            correct: false
+            correct: "false"
         }, {
             id: 2,
             name: "tulpaner",
             imgSrc: "flower-tulpaner.jpeg",
-            correct: false
+            correct: "false"
         }, {
             id: 3,
             name: "vitsippa",
             imgSrc: "flower-vitsippa.jpeg",
-            correct: false
+            correct: "false"
         }
     ],
     character: {
@@ -109,20 +109,20 @@ const data = [{
         {
             id: 0,
             text: "6",
-            correct: false
+            correct: "false"
         }, {
             id: 1,
             text: "9",
-            correct: false
+            correct: "false"
         }, {
             id: 2,
             text: "18",
 
-            correct: false
+            correct: "false"
         }, {
             id: 3,
             text: "14",
-            correct: true
+            correct: "true"
         }
     ],
     character: {
@@ -140,19 +140,19 @@ const data = [{
         {
             id: 0,
             text: "50",
-            correct: false
+            correct: "false"
         }, {
             id: 1,
             text: "10",
-            correct: false
+            correct: "false"
         }, {
             id: 2,
             text: "17",
-            correct: false
+            correct: "false"
         }, {
             id: 3,
             text: "20",
-            correct: true
+            correct: "true"
         }
     ],
     character: {
@@ -171,19 +171,19 @@ const data = [{
         {
             id: 0,
             imgSrc: "sökväg",
-            correct: true
+            correct: "true"
         }, {
             id: 1,
             imgSrc: "sökväg",
-            correct: false
+            correct: "false"
         }, {
             id: 2,
             imgSrc: "sökväg",
-            correct: false
+            correct: "false"
         }, {
             id: 3,
             imgSrc: "sökväg",
-            correct: false
+            correct: "false"
         }
     ],
     tip: "WOW! Jag blev så hungrig av allt dansande, tur att jag har gömt Nalle Puhs goda honung på baksidan av barnscenen, uppe vid kullen vid ett av träden viskar Tiger till dig. Nämn inget till Nalle Puh, men jag åt lite tidigare idag också. Det var nog den som gav mig så mycket energi.",
