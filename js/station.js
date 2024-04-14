@@ -1,7 +1,7 @@
 let currentIndex = 0;
 
-const toStation = document.getElementById('to-station');
-toStation.addEventListener('click', handleToStationClick);
+const toStation = document.getElementById("to-station");
+toStation.addEventListener("click", handleToStationClick);
 
 function handleToStationClick() {
   const currentContent = data[currentIndex];
@@ -23,9 +23,9 @@ function displayContent(currentContent) {
     document.body.innerHTML = `
       <main class="station-main">
         <div class="station-buttons">
-          ${createButtonGroup('fas fa-question', 'Tips')}
-          ${createButtonGroup('fas fa-map-marker-alt', 'Karta')}
-          ${createButtonGroup('fas fa-paw', `Om ${currentContent.character.name}`)}
+          ${createButtonGroup("fas fa-question", "Tips")}
+          ${createButtonGroup("fas fa-map-marker-alt", "Karta")}
+          ${createButtonGroup("fas fa-paw", `Om ${currentContent.character.name}`)}
         </div>
 
         <div class="question-content">
@@ -48,7 +48,7 @@ function createAlternatives(currentContent) {
 
   if (alternativeType === "text") {
     alternatives.forEach((alternative) => {
-      const button = document.createElement('button');
+      const button = document.createElement("button");
       button.classList = "alternative-button alternative-text";
       button.innerText = alternative.text;
       button.setAttribute("data-id", alternative.id);
@@ -56,7 +56,7 @@ function createAlternatives(currentContent) {
     });
   } else if (alternativeType === "image") {
     alternatives.forEach((alternative) => {
-      const button = document.createElement('button');
+      const button = document.createElement("button");
       const img = document.createElement('img');
       button.classList = "alternative-button alternative-image";
       img.src = "../media/" + alternative.imgSrc;
@@ -67,8 +67,8 @@ function createAlternatives(currentContent) {
     });
   }
 
-  document.querySelectorAll('.alternative-button').forEach(button => {
-    button.addEventListener('click', (event) => {
+  document.querySelectorAll(".alternative-button").forEach(button => {
+    button.addEventListener("click", (event) => {
       checkAnswer(event, currentContent);
     });
   });
@@ -97,10 +97,10 @@ let warningTimer = null;
 
 function renderTryAgainMessage() {
   if (!warningTimer) {
-    const alternativesContainer = document.querySelector('.alternatives-container');
-    const warning = document.createElement('div');
+    const alternativesContainer = document.querySelector(".alternatives-container");
+    const warning = document.createElement("div");
     warning.textContent = "Svaret är fel. Försök igen :)";
-    warning.classList.add('try-again-warning');
+    warning.classList.add("try-again-warning");
 
     alternativesContainer.parentNode.insertBefore(warning, alternativesContainer.nextSibling);
 
