@@ -30,8 +30,9 @@ const data = [{
         description: "I-or är en nedstämd, men snäll och pessimistisk åsna. Han är känd för sin oro och filosofiska tankar samt sin ironiska humor. I-or har en negativ syn på det mesta och tror att det värsta alltid kommer att hända. Trots det är han också intelligent och ger kloka råd. När han talar har han en monoton och lugn röst och använder sig av korta meningar.",
         imgSrc: ""
     },
-    tipsFromPreviousCharacter: "NA",
+    tipsFromPreviousCharacter: "Svara rätt på frågan så kan du få ett tips från I-or.",
     tipsFromCurrentCharacter: "Tack så mycket för tipset om glassen, den verkar jättegod! Jag har däremot inte sett honungsburken men såg Ru borta vid terrariet innan. Jag vill helst inte vistas bland djuren, men har hört att djuren där är mycket förtjusta i honung. Kanske de har tagit och smakat lite på Nalle Puhs honung?",
+    nameOfPreviousCharacter: "I-or",
     map: "??"
 }, {
     id: 1,
