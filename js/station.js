@@ -84,7 +84,23 @@ function checkAnswer(event, currentContent) {
     renderTryAgainMessage();
   }
 }
-  return alternativesDiv.innerHTML;
+
+let warningTimer = null;
+
+function renderTryAgainMessage() {
+  if (!warningTimer) {
+    const alternativesContainer = document.querySelector('.alternatives-container');
+    const warning = document.createElement('div');
+    warning.textContent = "Svaret är fel. Försök igen :)";
+    warning.classList.add('try-again-warning');
+
+    alternativesContainer.parentNode.insertBefore(warning, alternativesContainer.nextSibling);
+
+    warningTimer = setTimeout(() => {
+      warning.remove();
+      warningTimer = null;
+    }, 2000);
+  }
 }
 
 function shuffleArray(array) {
