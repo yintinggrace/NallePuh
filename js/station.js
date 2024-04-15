@@ -66,12 +66,12 @@ function createAlternatives(currentContent) {
 
   document.querySelectorAll(".alternative-button").forEach(button => {
     button.addEventListener("click", (event) => {
-      checkAnswer(event, currentContent);
+      checkAnswer(event, currentContent, "createAlternatives");
     });
   });
 }
 
-function checkAnswer(event, currentContent) {
+function checkAnswer(event, currentContent, context) {
   const target = event.target;
   const targetId = parseInt(target.getAttribute("data-id"));
 
@@ -83,10 +83,18 @@ function checkAnswer(event, currentContent) {
 
   const isCorrect = targetId === correctAlternative.id;
 
-  if (isCorrect) {
-    renderTipPopUp(currentContent.id, "tipsFromCurrentCharacter");
-  } else {
-    renderTryAgainMessage();
+  if (context === "createAlternatives") {
+    if (isCorrect) {
+      renderTipPopUp(currentContent.id, "tipsFromCurrentCharacter");
+    } else {
+      renderTryAgainMessage();
+    }
+  } else if (context === "renderLastStation") {
+    if (isCorrect) {
+      renderDownloadDiplomaPage();
+    } else {
+      renderTryAgainMessage();
+    }
   }
 }
 
@@ -122,5 +130,52 @@ function createButtonGroup(iconClass, text) {
         <i class="${iconClass}"></i>
       </div>${text}
     </div>
+  `;
+}
+
+function renderLastStation() {
+  const lastQuestion = data.find(item => item.id === 5);
+  const questDescription = lastQuestion.questDescription;
+  const alternatives = createAlternativesLastStation(lastQuestion);
+
+  body.innerHTML = `
+    <main class="station-main final-main">
+      <div class="final-station-container">
+        <div class="final-station-text-container">
+            <p class="congrats-title">Grattis!</p>
+        </div>
+        <div class="question-content">
+          <div class="congrats-description">${questDescription}</div>
+          <div class=" alternatives-container">${alternatives}</div>
+        </div>
+      </div>
+    </main>
+  `;
+
+  document.querySelectorAll(".alternative-button").forEach(button => {
+    button.addEventListener("click", (event) => {
+      checkAnswer(event, lastQuestion, "renderLastStation");
+    });
+  });
+}
+
+function createAlternativesLastStation(currentContent) {
+  const alternatives = currentContent.alternatives;
+  let alternativesHTML = "";
+
+  alternatives.forEach((alternative) => {
+    alternativesHTML += `
+      <button class="alternative-button">
+        <img src="../media/${alternative.imgSrc}" alt="${alternative.name}" data-id="${alternative.id}">
+      </button>
+    `;
+  });
+
+  return alternativesHTML;
+}
+
+function renderDownloadDiplomaPage() {
+  body.innerHTML = `
+    <div>DownloadDiplomaPage</div>
   `;
 }
