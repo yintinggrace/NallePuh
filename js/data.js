@@ -172,27 +172,27 @@ const data = [{
 }, {
     id: 5,
     questDescription: "Nu har du äntligen hittat Nalle Puhs honung. Klicka på den bilden som liknar stället som du hittade honungen på för att säkerställa att du verkligen hittade Nalle Puhs honung.",
-    alternativeType: "image",
     alternatives: [
         {
             id: 0,
-            imgSrc: "sökväg",
-            correct: "true"
+            name: "elefant staty",
+            imgSrc: "location-elephant-statue.jpg",
+            correct: "false"
         }, {
             id: 1,
-            imgSrc: "sökväg",
+            name: "lekplats",
+            imgSrc: "location-playground.jpg",
             correct: "false"
         }, {
             id: 2,
-            imgSrc: "sökväg",
+            name: "hål",
+            imgSrc: "location-hole.jpg",
             correct: "false"
         }, {
             id: 3,
-            imgSrc: "sökväg",
-            correct: "false"
+            name: "träd",
+            imgSrc: "location-tree.png",
+            correct: "true"
         }
     ],
-    map: "??"
 }]
-
-// jag tänker att tipset som gäller Ru får ligga under Ru och inte I-or. Alltså den det gäller, inte den som ger tipset.

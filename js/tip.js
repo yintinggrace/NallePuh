@@ -33,6 +33,10 @@ function renderTipPopUp(questId, tips) {
                 currentIndex = questId;
             } else {
                 currentIndex++;
+                if (currentIndex === 5) {
+                renderLastStation();
+                return;
+                }
             }
             handleToStationClick();
         });
