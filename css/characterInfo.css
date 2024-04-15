@@ -37,4 +37,5 @@
     width: 80vw;
     background-position: top left;
     background-size: cover;
+    overflow: hidden;
 }

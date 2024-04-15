@@ -1,6 +1,5 @@
-// renderCharacterInfo("Tiger")
 
-function renderCharacterInfo(characterName) {
+function renderCharacterInfo(characterName, originView) {
 
     let questObject = {};
 
@@ -40,6 +39,12 @@ function renderCharacterInfo(characterName) {
         body.innerHTML = ``;
         document.querySelector("body").style.overflow = `auto`;
 
-        console.log("här ska vi anropa rätt funktion");
+        if (originView == "homepage") {
+            renderHomePage();
+        }
+        else {
+            handleToStationClick()
+        }
+
     });
 }

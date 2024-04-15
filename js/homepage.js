@@ -1,4 +1,4 @@
-function renderHomePage () {
+function renderHomePage() {
     body.innerHTML = `
     <container id="homepage">
         <div id="home1">
@@ -45,6 +45,17 @@ function renderHomePage () {
     </container>
 `;
 
-const toStart = document.getElementById("to-start");
-toStart.addEventListener("click", renderStartPage1);
+
+    document.querySelectorAll(".scrollImg").forEach(element => {
+
+        element.addEventListener("click", (e) => {
+            let targetName = e.target.parentNode.querySelector("p").textContent;
+
+            renderCharacterInfo(targetName, "homepage")
+        });
+
+    });
+
+    const toStart = document.getElementById("to-start");
+    toStart.addEventListener("click", renderStartPage1);
 }

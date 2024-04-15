@@ -6,18 +6,18 @@ function handleToStationClick() {
   createAlternatives(currentContent);
 
   const aboutCharacter = document.querySelector(`.Om.${currentContent.character.name}`);
-  aboutCharacter.addEventListener("click", function() {
+  aboutCharacter.addEventListener("click", function () {
     renderCharacterInfo(currentContent.character.name);
   });
 
   const tipsButton = document.querySelector(".Tips");
-  tipsButton.addEventListener("click", function() {
+  tipsButton.addEventListener("click", function () {
     renderTipPopUp(currentContent.id, "tipsFromPreviousCharacter");
   });
 }
 
 function displayContent(currentContent) {
-    document.body.innerHTML = `
+  document.body.innerHTML = `
       <main class="station-main">
         <div class="station-buttons">
           ${createButtonGroup("fas fa-question", "Tips")}
