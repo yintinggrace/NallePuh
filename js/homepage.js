@@ -51,7 +51,7 @@ function renderHomePage() {
         element.addEventListener("click", (e) => {
             let targetName = e.target.parentNode.querySelector("p").textContent;
 
-            renderCharacterInfo(targetName, "homepage")
+            renderCharacterInfo(targetName, "homepage");
         });
 
     });

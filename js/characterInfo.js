@@ -43,7 +43,7 @@ function renderCharacterInfo(characterName, originView) {
             renderHomePage();
         }
         else {
-            handleToStationClick()
+            handleToStationClick();
         }
 
     });
