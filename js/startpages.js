@@ -21,13 +21,13 @@ function renderStartPage1() {
     </container>
     `;
 
-    document.addEventListener("click", function(event) {
+    document.addEventListener("click", function (event) {
         if (event.target.classList.contains("back1")) {
             renderHomePage();
         }
     });
 
-    document.addEventListener("click", function(event) {
+    document.addEventListener("click", function (event) {
         if (event.target.classList.contains("continue1")) {
 
             const inputElement = document.getElementById("numberOfChildrenInput");
@@ -76,19 +76,19 @@ function renderStartPage2(numberOfChildren) {
     </container>
     `;
 
-    document.addEventListener("click", function(event) {
+    document.addEventListener("click", function (event) {
         if (event.target.classList.contains("back2")) {
             renderStartPage1();
         }
     });
 
-    document.addEventListener("click", function(event) {
+    document.addEventListener("click", function (event) {
         if (event.target.classList.contains("continue2")) {
             const inputElements = document.querySelectorAll("#childrenForm input");
             const childrenNames = [];
             let allInputsFilled = true;
 
-            inputElements.forEach(function(input) {
+            inputElements.forEach(function (input) {
                 if (input.value.trim() === "") {
                     allInputsFilled = false;
                 }
@@ -114,7 +114,10 @@ function renderStartPage3() {
     body.innerHTML = `
     <container class="startpages">
         <div id="page3Section1">
-            <p>Nalle Puh, björnen med stort hjärta och ännu större aptit för honung, har tappat bort sin älskade honungsburk. Paniken spred sig snabbt bland hans vänner när de insåg att deras kära vän var i nöd. Hans vänner befinner sig utspridda i Folkets Park och letar efter honungen. Hjälp hans vänner och Nalle Puh att hitta hans honung genom att fråga dem. Han tar emot all hjälp han kan få och följer gärna med dig då han tror att du kan hjälpa honom extra mycket!</p>
+            <p>Nalle Puh, björnen med stort hjärta och ännu större aptit för honung, har tappat bort sin älskade honungsburk. 
+            <br></br>
+            Hans vänner blev snabbt oroliga när de insåg att deras kära vän var i nöd. De befinner sig utspridda i Folkets Park och letar efter honungen. Hjälp Nalle Puh och hans vänner att hitta honungen genom att prata med dem. Nalle Puh tar emot all hjälp han kan få och följer gärna med dig eftersom han tror att du kan hjälpa honom extra mycket!</p>
+            <br></br>
             <p>Börja resan hos I:or. Han <br> finns vid x kiosken.</p>
         </div>
         <div id="page3Section2">
