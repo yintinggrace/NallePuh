@@ -21,6 +21,11 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--whitegrey);
+    font-family: "Inter", sans-serif;
+}
+
+button {
+    font-family: "Inter", sans-serif;
 }
 
 p {

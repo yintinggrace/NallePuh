@@ -4,7 +4,6 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: "Inter", sans-serif;
 }
 
 #homepage p {
@@ -140,7 +139,6 @@
     width: 50%;
     height: 24%;
     font-size: 2vh;
-    font-family: "Inter", sans-serif;
     font-weight: 500;
     border: none;
     border-radius: 5px;
