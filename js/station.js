@@ -14,6 +14,11 @@ function handleToStationClick() {
   tipsButton.addEventListener("click", function () {
     renderTipPopUp(currentContent.id, "tipsFromPreviousCharacter");
   });
+
+  const mapButton = document.querySelector(".Karta");
+  mapButton.addEventListener("click", function () {
+    renderCurrentLocationView();
+  });
 }
 
 function displayContent(currentContent) {
