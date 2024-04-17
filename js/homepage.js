@@ -4,7 +4,7 @@ function renderHomePage() {
         <div id="home1">
             <h1>Hej!</h1>
             <p>Nalle Puh har tappat bort <br> sin favorithonung! Vad <br> ska han göra nu? Kan du <br> hjälpa honom?</p>
-            <div id="homeImg1"></div>
+            <img id="homeImg1" src="../media/nalle-puh-1.png" alt="Nalle Puh"></img>
         </div>
         <div id="home2">
             <div id="home2Box">

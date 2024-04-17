@@ -31,12 +31,7 @@
 }
 
 #homeImg1 {
-    background-image: url("../media/nalle-puh-1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 63%;
-    width: 39%;
+    height: 65%;
     position: absolute;
     right: 0;
     bottom: 6%;
@@ -64,6 +59,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     width: 100%;
+    margin-top: 20px;
 }
 
 #scrollContainer > p {
@@ -136,10 +132,32 @@
 
 #to-start {
     background-color: var(--orange);
-    width: 50%;
     height: 24%;
     font-size: 2vh;
     font-weight: 500;
     border: none;
     border-radius: 5px;
+}
+
+@media screen and (min-width: 769px) {
+    #scrollContainer {
+        justify-content: center;
+    }
+
+    #home1 {
+        flex-direction: initial;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+    }
+
+    #homeImg1 {
+        height: 65%;
+        position: initial;
+    }
+
+    #home2Box > h2 {
+        margin-left: 20%;
+    }
 }
