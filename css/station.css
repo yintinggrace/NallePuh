@@ -47,8 +47,12 @@
   gap: 5px;
 }
 
+.alternative-button {
+  border: none;
+}
+
 .alternative-button img {
-  width: 38vw;
+  width: 100%;
 }
 
 .alternative-text {
