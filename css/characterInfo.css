@@ -1,3 +1,7 @@
+#characterInfoContainer {
+    padding: 20px;
+}
+
 #closeCrossBtn {
     position: absolute;
     top: 3vh;
@@ -29,13 +33,31 @@
     margin-top: 0;
 }
 
-#characterImage {
+#character-image {
+    height: 36vh;
     position: absolute;
-    left: 23%;
-    top: 55%;
-    height: 50vh;
-    width: 80vw;
-    background-position: top left;
-    background-size: cover;
-    overflow: hidden;
+    bottom: 3vh;
+    right: -5vw;
+}
+
+@media screen and (min-width: 769px) {
+    #characterInfoContainer {
+        padding: 100px;
+    }
+
+    #characterImage {
+        height: 400px;
+        width: 400px;
+        right: 10vw;
+        left: auto;
+        bottom: 4vh;
+        top: auto;
+    }
+
+    #character-image {
+        height: 30vh;
+        position: absolute;
+        right: 20vw;
+        bottom: 20vh;
+    }
 }

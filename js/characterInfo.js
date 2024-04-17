@@ -28,11 +28,15 @@ function renderCharacterInfo(characterName, originView) {
     </div>
     `;
 
-    document.querySelector("#characterImage").style.backgroundImage = `url(/media/character-${questObject.character.name}.png)`;
-    document.querySelector("body").style.overflow = `hidden`;
+    const characterImg = document.createElement("img");
+
+    characterImg.src = `/media/character-${questObject.character.name}.png`;
+    characterImg.alt = `${questObject.character.name}`;
+    characterImg.id = "character-image";
+    document.querySelector("#characterImage").appendChild(characterImg);
 
     if (questObject.character.name == "Nalle Puh") {
-        document.querySelector("#characterImage").style.backgroundImage = `url(/media/character-nalle-puh.png)`;
+        characterImg.src = `/media/character-nalle-puh.png`;
     }
 
     document.querySelector("#closeCrossBtn").addEventListener("click", () => {
