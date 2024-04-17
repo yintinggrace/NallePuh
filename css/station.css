@@ -85,3 +85,26 @@
 .honey-locations {
   margin-bottom: 30px;
 }
+
+@media screen and (min-width: 769px) {
+  .question-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .question-description {
+    max-width: 70vw;
+  }
+
+  .alternative-button {
+    width: 200px;
+  }
+
+  .alternatives-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+  }
+}
+
