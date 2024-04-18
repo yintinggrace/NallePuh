@@ -49,10 +49,13 @@
 
 .alternative-button {
   border: none;
+  background-color: transparent;
 }
 
 .alternative-button img {
   width: 100%;
+  border-radius: 10px;
+  background-color: #e6e6e6;
 }
 
 .alternative-text {
@@ -107,4 +110,3 @@
     max-width: 70vw;
   }
 }
-

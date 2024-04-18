@@ -1,16 +1,16 @@
 // AIzaSyBntwZlNVDr7QfNDzFNemomWdWJi2g0liY
 
-function renderCurrentLocationView() {
+function renderCurrentLocationView(currentContent) {
 
     body.style.overflow = `hidden`;
 
     body.innerHTML = `
             <div id="closeBtn"></div>
-            <div id="mapAndCurrentStation">
+            <div id="mapAndCurrentLocation">
                 <div id="smallMap" class="map"></div>
-                <div id="currentStation">
-                    <div id="currentStationImg"></div>
-                    <p id="currentStationName">xxxxxx</p>
+                <div id="currentLocation">
+                    <div id="currentLocationImg"></div>
+                    <p id="currentLocationName"></p>
                 </div>
             </div>
         `;
@@ -20,6 +20,9 @@ function renderCurrentLocationView() {
 
         handleToStationClick();
     });
+
+    document.querySelector("#currentLocationImg").style.backgroundImage = `url(${currentContent.locationImg})`;
+    document.querySelector("#currentLocationName").textContent = "Gå till: " + currentContent.locationName;
 
     document.querySelector("#smallMap").addEventListener("click", () => {
         renderFullscreenMap();

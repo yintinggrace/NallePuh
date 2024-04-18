@@ -17,7 +17,7 @@ function handleToStationClick() {
 
   const mapButton = document.querySelector(".Karta");
   mapButton.addEventListener("click", function () {
-    renderCurrentLocationView();
+    renderCurrentLocationView(currentContent);
   });
 }
 

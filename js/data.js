@@ -1,6 +1,6 @@
 const data = [{
     id: 0,
-    questDescription: "Börja resan i kiosken där I-or är! I-or känner sig deppig och ledsen, som vanligt, hur ska du muntra upp honom? I-or berättar att han har tandvärk och att han behöver något som hjälper mot det, eftersom ni är vid kiosken kanske du kan ge förslag på en glass som skulle kunna lindra hans tandvärk. ",
+    questDescription: "Börja resan vid kiosken där I-or är! I-or känner sig deppig och ledsen, som vanligt, hur ska du muntra upp honom? I-or berättar att han har tandvärk och att han behöver något som hjälper mot det, eftersom ni är vid kiosken kanske du kan ge förslag på en glass som skulle kunna lindra hans tandvärk. ",
     alternativeType: "image",
     alternatives: [
         {
@@ -33,7 +33,8 @@ const data = [{
     tipsFromPreviousCharacter: "Svara rätt på frågan så kan du få ett tips från I-or.",
     tipsFromCurrentCharacter: "Tack så mycket för tipset om glassen, den verkar jättegod! Jag har däremot inte sett honungsburken men såg Ru borta vid terrariet innan. Jag vill helst inte vistas bland djuren, men har hört att djuren där är mycket förtjusta i honung. Kanske de har tagit och smakat lite på Nalle Puhs honung?",
     nameOfPreviousCharacter: "I-or",
-    map: "??"
+    locationImg: "../media/animal-red-panda.jpg",
+    locationName: "Kiosken"
 }, {
     id: 1,
     questDescription: "Nämen! Är du här, utbrister Ru. Utmärkt, jag har inte sett någon honung för jag är upptagen med att titta på djuren. Jag älskar alla djur, om du svarar på vilket djur som är mitt favoritdjur så kan jag ge dig ett tips om var honungen kan vara.",
@@ -56,7 +57,7 @@ const data = [{
             correct: "false"
         }, {
             id: 3,
-            name: "röd panda",
+            name: "röd panda.jpg",
             imgSrc: "animal-red-panda.jpg",
             correct: "false"
         }
@@ -69,7 +70,8 @@ const data = [{
     tipsFromPreviousCharacter: "Tack så mycket för tipset om glassen, den verkar jättegod! Jag har däremot inte sett honungsburken men såg Ru borta vid terrariet innan. Jag vill helst inte vistas bland djuren, men har hört att djuren där är mycket förtjusta i honung. Kanske de har tagit och smakat lite på Nalle Puhs honung?",
     tipsFromCurrentCharacter: "Du klickade rätt! Jag är ledsen att jag inte kunde hjälpa dig, men Nasse är bästa vän till Nalle Puh, så han borde veta var den är? Nasse befinner sig ofta i trädgården, kolla där!",
     nameOfPreviousCharacter: "I-or",
-    map: "??"
+    locationImg: "../media/animal-red-panda.jpg",
+    locationName: "Terrariet"
 }, {
     id: 2,
     questDescription: "Hejsan, säger Nasse. Nasse är väldigt nervös för tillfället och kan inte föra ett samtal. När du frågar honom om honungsburken blir han ännu mer förtvivlad. Hitta ett sätt att hjälpa Nasse att lugna ner sig innan du frågar honom igen. Du vet att Nasse gillar blommor. Låt Nasse känna lukten av hans favoritblomma.",
@@ -105,7 +107,8 @@ const data = [{
     tipsFromPreviousCharacter: "Du klickade rätt! Jag är ledsen att jag inte kunde hjälpa dig, men Nasse är bästa vän till Nalle Puh, så han borde veta var den är? Nasse befinner sig ofta i trädgården, kolla där!",
     tipsFromCurrentCharacter: "Jag vet att honungsburken en gång satt fast i ett hål. Minigolfen har många hål i marken, kika där!",
     nameOfPreviousCharacter: "Ru",
-    map: "??",
+    locationImg: "../media/animal-red-panda.jpg",
+    locationName: "Trädgården"
 }, {
     id: 3,
     questDescription: "Du kommer till minigolfbanan och här befinner sig Kanin. Kanin har fastnat för sina okontrollerbara och återkommande tankar. Han räknar hur många banor det finns på minigolfbanan men han behöver lite hjälp. Han tappar alltid räkningen efter bana tre. Räkna hur många banor det finns på efter hål tre och plussa ihop det med 3.",
@@ -136,7 +139,8 @@ const data = [{
     tipsFromPreviousCharacter: "Jag vet att honungsburken en gång satt fast i ett hål. Minigolfen har många hål i marken, kika där!",
     tipsFromCurrentCharacter: "Jag ser inte honungsburken i något hål här. Nalle Puh kollade på uppträdanden tidigare idag på barnens scen, kan honungen kanske vara där?",
     nameOfPreviousCharacter: "Nasse",
-    map: "??"
+    locationImg: "../media/animal-red-panda.jpg",
+    locationName: "Minigolfen"
 }, {
     id: 4,
     questDescription: "Tjohooo skriker Tiger högt! Du kommer fram till ingången till barnscenen där Tiger försöker dansa sig in på barnscenen. Tiger är i sin egen värld och har inte tid att uppmärksamma dig och dina frågor med honungsburken. Du behöver därför lugna ner Tiger. Detta gör du enklast genom att dansa med Tiger för att få ut hans energi. Dansa med honom och klicka på det antalet hopp som du tror Tiger tog med sin svans under tiden ni dansade tillsammans.",
@@ -168,7 +172,8 @@ const data = [{
     tipsFromPreviousCharacter: "Jag ser inte honungsburken i något hål här. Nalle Puh kollade på uppträdanden tidigare idag på barnens scen, kan honungen kanske vara där?",
     tipsFromCurrentCharacter: "WOW! Jag blev så hungrig av allt dansande, tur att jag har gömt Nalle Puhs goda honung på baksidan av barnscenen, uppe vid kullen vid ett av träden viskar Tiger till dig. Nämn inget till Nalle Puh, men jag åt lite tidigare idag också. Det var nog den som gav mig så mycket energi.",
     nameOfPreviousCharacter: "Kanin",
-    map: "??"
+    locationImg: "../media/animal-red-panda.jpg",
+    locationName: "Barnens Scen"
 }, {
     id: 5,
     questDescription: "Nu har du äntligen hittat Nalle Puhs honung. Klicka på den bilden som liknar stället som du hittade honungen på för att säkerställa att du verkligen hittade Nalle Puhs honung.",

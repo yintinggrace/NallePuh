@@ -5,7 +5,7 @@ function renderTipPopUp(questId, tips) {
 
     let titleContent = questObject.character.name;
     let tipsText = questObject.tipsFromCurrentCharacter;
-    let buttonText = "Fortsätta";
+    let buttonText = "Fortsätt";
 
     if (tips === "tipsFromPreviousCharacter") {
         titleContent = questObject.nameOfPreviousCharacter;
@@ -28,14 +28,14 @@ function renderTipPopUp(questId, tips) {
     const closeOrContinueBtns = document.querySelectorAll(`.${buttonClass}`);
 
     closeOrContinueBtns.forEach(button => {
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
             if (buttonClass === "closeBtn") {
                 currentIndex = questId;
             } else {
                 currentIndex++;
                 if (currentIndex === 5) {
-                renderLastStation();
-                return;
+                    renderLastStation();
+                    return;
                 }
             }
             handleToStationClick();

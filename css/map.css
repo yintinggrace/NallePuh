@@ -13,7 +13,7 @@
     padding: 10px;
 }
 
-#mapAndCurrentStation {
+#mapAndCurrentLocation {
     display: flex;
     flex-direction: column;
     gap: 5vh;
@@ -23,7 +23,7 @@
     align-items: center;
 }
 
-#currentStation {
+#currentLocation {
     text-align: center;
 }
 
@@ -33,11 +33,11 @@
     border-radius: 20px;
 }
 
-#currentStationImg {
+#currentLocationImg {
     height: 80vw;
     width: 40vh;
     border-radius: 20px;
-    background-image: url(/media/flower-lilja.jpeg);
+    /*   background-image: url(/media/flower-lilja.jpeg); */
     background-position: center;
     background-size: cover;
 }
