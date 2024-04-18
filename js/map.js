@@ -25,7 +25,7 @@ function renderCurrentLocationView(currentContent) {
     document.querySelector("#currentLocationName").textContent = "Gå till: " + currentContent.locationName;
 
     document.querySelector("#smallMap").addEventListener("click", () => {
-        renderFullscreenMap();
+        renderFullscreenMap(currentContent);
     });
 
     renderMap(55.59312057495117, 13.013703346252441, false)
@@ -37,7 +37,7 @@ function renderCurrentLocationView(currentContent) {
     }
 }
 
-function renderFullscreenMap() {
+function renderFullscreenMap(currentContent) {
 
     body.style.overflow = `hidden`;
 
@@ -47,7 +47,7 @@ function renderFullscreenMap() {
         `;
 
     document.querySelector("#closeBtn").addEventListener("click", () => {
-        renderCurrentLocationView();
+        renderCurrentLocationView(currentContent);
     });
 
     renderMap(55.59312057495117, 13.013703346252441, false)
