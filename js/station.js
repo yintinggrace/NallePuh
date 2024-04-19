@@ -171,7 +171,7 @@ function createAlternativesLastStation(currentContent) {
   alternatives.forEach((alternative) => {
     alternativesHTML += `
       <button class="alternative-button">
-        <img src="../media/${alternative.imgSrc}" alt="${alternative.name}" data-id="${alternative.id}">
+        <img src="../NallePuh/media/${alternative.imgSrc}" alt="${alternative.name}" data-id="${alternative.id}">
       </button>
     `;
   });

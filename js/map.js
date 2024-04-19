@@ -21,7 +21,8 @@ function renderCurrentLocationView(currentContent) {
         handleToStationClick();
     });
 
-    document.querySelector("#currentLocationImg").style.backgroundImage = `url(${currentContent.locationImg})`;
+    document.querySelector("#currentLocationImg").style.backgroundImage = `url(../NallePuh/media/${currentContent.locationImg})`;
+
     document.querySelector("#currentLocationName").textContent = "Gå till: " + currentContent.locationName;
 
     document.querySelector("#smallMap").addEventListener("click", () => {
@@ -53,7 +54,7 @@ function renderFullscreenMap(currentContent) {
     renderMap(55.59312057495117, 13.013703346252441, false)
 
     if (navigator.geolocation) {
-        /* 
+        /*
                 if (localStorage.getItem("lat")) {
                     showPosition({
                         coords:

@@ -2,7 +2,7 @@
     position: absolute;
     top: 1vh;
     right: 1vh;
-    background-image: url(/media/close.png);
+    background-image: url("../media/close.png");
     height: 2.5vh;
     width: 2.5vh;
     background-position: center;

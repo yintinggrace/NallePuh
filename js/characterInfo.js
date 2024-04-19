@@ -30,13 +30,13 @@ function renderCharacterInfo(characterName, originView) {
 
     const characterImg = document.createElement("img");
 
-    characterImg.src = `/media/character-${questObject.character.name}.png`;
+    characterImg.src = `../NallePuh/media/character-${questObject.character.name}.png`;
     characterImg.alt = `${questObject.character.name}`;
     characterImg.id = "character-image";
     document.querySelector("#characterImage").appendChild(characterImg);
 
     if (questObject.character.name == "Nalle Puh") {
-        characterImg.src = `/media/character-nalle-puh.png`;
+        characterImg.src = `../NallePuh/media/character-nalle-puh.png`;
     }
 
     document.querySelector("#closeCrossBtn").addEventListener("click", () => {
