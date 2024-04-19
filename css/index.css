@@ -1,6 +1,6 @@
 @font-face {
     font-family: piglet;
-    src: url(/media/Piglet.ttf);
+    src: url("../media/Piglet.ttf");
 }
 
 :root {

@@ -61,7 +61,7 @@ function createAlternatives(currentContent) {
       const button = document.createElement("button");
       const img = document.createElement('img');
       button.classList = "alternative-button alternative-image";
-      img.src = "../media/" + alternative.imgSrc;
+      img.src = "../NallePuh/media/" + alternative.imgSrc;
       img.setAttribute("alt", alternative.name);
       img.setAttribute("data-id", alternative.id);
       button.appendChild(img);
