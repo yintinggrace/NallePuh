@@ -1,13 +1,15 @@
 
 function renderCharacterInfo(characterName, originView) {
 
+    document.querySelector("body").style.overflow = `hidden`;
+
     let questObject = {};
 
     if (characterName == "Nalle Puh") {
         questObject = {
             character: {
                 name: "Nalle Puh",
-                description: "Nalle Puh utgör huvudpersonen i Nalle Puhs berättelsevärld. Hans personlighet karaktäriseras av att han är snäll, men något ointelligent och glömsk  samt att han lider av diagnosen ADD, vilket speglas av att han tänker mycket men inte får mycket gjort. Vidare är Nalle Puh mycket förälskad i honung och föredrar att ha ett lugnt synsätt på livet."
+                description: "Nalle Puh är huvudpersonen i Nalle Puhs berättelsevärld. Han är snäll, men något glömsk och tänker mycket och gör lite. Nalle Puh är också förälskad i honung."
             }
         }
     } else {

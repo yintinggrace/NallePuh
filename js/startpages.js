@@ -12,7 +12,7 @@ function renderStartPage1() {
             <p>Hur många barn deltar i denna skattjakt?</p>
             <p id="maxChildrenMessage">Endast nummer är tillåtna</p>
             <input type="number" id="numberOfChildrenInput" placeholder="max: 10">
-            <p id="tipMessage">Är ni många barn som spelar kan man välja att skriva in "1" och skapa ett gruppnamn i nästa steg</p>
+            <p id="tipMessage">Är det många barn som spelar kan man välja att skriva in "1" och skapa ett gruppnamn i nästa steg.</p>
         </div>
         <div id="page1Section3">
             <button class="back1">Tillbaka</button>

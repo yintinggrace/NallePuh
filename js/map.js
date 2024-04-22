@@ -94,7 +94,7 @@ function renderMap(lat, lng, marker) {
     const map = new google.maps.Map(mapElement, mapOptions);
 
 
-    // det kommer upp ett error här men det gör inget
+    // det kommer upp en varning här men det gör inget
     if (marker) {
         new google.maps.Marker({
             position: { lat: lat, lng: lng },

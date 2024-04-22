@@ -10,7 +10,7 @@
 }
 
 #characterTextContainer {
-    padding: 100px 30px 0 30px;
+    padding: 145px 30px 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 #characterName {
-    font-family: piglet;
+    font-family: piglet, "Inter";
     font-size: 5vh;
     margin: 0;
 }

@@ -23,7 +23,7 @@ body {
 }
 
 #tipTitle {
-    font-family: piglet;
+    font-family: piglet, "Inter";
     font-size: 5vh;
     margin: 0;
 }
