@@ -21,7 +21,7 @@
 
 .icon-container {
   padding: 10px;
-  background-color: orange;
+  background-color: var(--orange);
   border-radius: 50%;
   width: 30px;
   display: flex;
@@ -31,7 +31,7 @@
 .fa-question,
 .fa-map-marker-alt,
 .fa-paw {
-  color: white;
+  color: var(--white);
   font-size: 30px;
 }
 
@@ -55,7 +55,7 @@
 .alternative-button img {
   width: 100%;
   border-radius: 10px;
-  background-color: #e6e6e6;
+  background-color: var(--mediumgrey);
 }
 
 .alternative-text {
