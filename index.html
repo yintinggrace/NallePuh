@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skattjakt</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script src="https://kit.fontawesome.com/67deff829e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="css/tip.css">
     <link rel="stylesheet" href="css/characterInfo.css">
     <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/diploma.css">
 </head>
 
 <body>
@@ -27,6 +29,25 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBntwZlNVDr7QfNDzFNemomWdWJi2g0liY&loading=async&callback=renderHomePage">
         </script>
 
+<script>
+    function generateImage() {
+        // Capture the diploma div as an image
+        html2canvas(document.getElementById('diploma'), {
+            onrendered: function(canvas) {
+                // Convert the canvas to PNG format
+                var image = canvas.toDataURL("image/png");
+
+                // Create a temporary link to trigger the download
+                var link = document.createElement('a');
+                link.download = 'diploma.png';
+                link.href = image;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        });
+    }
+</script>
 
     <script src="js/data.js"></script>
     <script src="js/homepage.js"></script>
@@ -36,6 +57,7 @@
     <script src="js/characterInfo.js"></script>
     <script src="js/index.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/diploma.js"></script>
 
 </body>
 
