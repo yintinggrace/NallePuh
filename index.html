@@ -31,6 +31,18 @@
 
 <script>
     function generateImage() {
+
+        document.getElementById("diploma").classList.remove("hidden");
+        document.head.innerHTML += `
+        <style>
+            body {
+                overflow: hidden;
+            }
+            .content {
+                /* Add your styles for the content here */
+            }
+        </style>
+        `;
         // Capture the diploma div as an image
         html2canvas(document.getElementById('diploma'), {
             onrendered: function(canvas) {
