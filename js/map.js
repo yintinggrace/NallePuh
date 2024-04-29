@@ -6,11 +6,12 @@ function renderCurrentLocationView(currentContent) {
 
     body.innerHTML = `
             <div id="closeBtn"></div>
+            <p class="currentLocationName-desktop"></p>
             <div id="mapAndCurrentLocation">
                 <div id="smallMap" class="map"></div>
                 <div id="currentLocation">
                     <div id="currentLocationImg"></div>
-                    <p id="currentLocationName"></p>
+                    <p class="currentLocationName-mobile"></p>
                 </div>
             </div>
         `;
@@ -23,7 +24,8 @@ function renderCurrentLocationView(currentContent) {
 
     document.querySelector("#currentLocationImg").style.backgroundImage = `url(../NallePuh/media/${currentContent.locationImg})`;
 
-    document.querySelector("#currentLocationName").textContent = "Gå till: " + currentContent.locationName;
+    document.querySelector(".currentLocationName-mobile").textContent = "Gå till: " + currentContent.locationName;
+    document.querySelector(".currentLocationName-desktop").textContent = "Gå till: " + currentContent.locationName;
 
     document.querySelector("#smallMap").addEventListener("click", () => {
         renderFullscreenMap(currentContent);

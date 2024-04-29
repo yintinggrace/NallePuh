@@ -21,6 +21,7 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 #currentLocation {
@@ -28,14 +29,14 @@
 }
 
 #smallMap {
-    height: 80vw;
-    width: 40vh;
+    height: 40vh;
+    width: 80vw;
     border-radius: 20px;
 }
 
 #currentLocationImg {
-    height: 80vw;
-    width: 40vh;
+    height: 40vh;
+    width: 80vw;
     border-radius: 20px;
     /*   background-image: url(/media/flower-lilja.jpeg); */
     background-position: center;
@@ -45,4 +46,36 @@
 #fullscreenMap {
     height: 100vh;
     width: 100vw;
+}
+
+.currentLocationName-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+    #mapAndCurrentLocation {
+        flex-direction: row;
+        height: 85vh;
+        margin-top: 0;
+    }
+
+    #smallMap {
+        height: 80vh;
+        width: 40vw;
+    }
+
+    #currentLocationImg {
+        height: 80vh;
+        width: 40vw;
+    }
+
+    .currentLocationName-desktop {
+        display: inherit;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .currentLocationName-mobile {
+    display: none;
+}
 }
