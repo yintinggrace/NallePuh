@@ -60,6 +60,7 @@
     overflow-y: hidden;
     width: 100%;
     margin-top: 20px;
+    height: 160px;
 }
 
 #scrollContainer > p {
@@ -106,6 +107,10 @@
 
 #ruHomeImg {
     background-image: url("../media/character-ru.png");
+}
+
+#christopherRobinHomeImg {
+    background-image: url("../media/character-christopher-robin.png");
 }
 
 #scrollContainer > :last-child {

@@ -34,6 +34,10 @@ function renderHomePage() {
                         <div id="ruHomeImg"></div>
                         <p>Ru</p>
                     </div>
+                    <div class="scrollImg">
+                        <div id="christopherRobinHomeImg"></div>
+                        <p>Christopher-Robin</p>
+                    </div>
                 </div>
             </div>
         </div>

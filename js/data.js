@@ -66,19 +66,19 @@ const data = [{
         description: "Ru är en glad och energisk känguru. Han gillar att ge sig ut på äventyr utomhus och tycker därför om apor då de är äventyrliga. Ru har perioder då han är särskilt intresserad i vissa ämnen och aktiviteter och är känslig för ljud och beröring.",
     },
     tipsFromPreviousCharacter: "Tack så mycket för tipset om glassen, den verkar jättegod! Jag har däremot inte sett honungsburken men såg Ru borta vid terrariet innan. Jag har hört att djuren där är mycket förtjusta i honung. Kanske har de smakat lite på Nalle Puhs honung?",
-    tipsFromCurrentCharacter: "Du klickade rätt! Jag är ledsen att jag inte kunde hjälpa dig, men Robin är bästa vän till Nalle Puh, så han vet kanske? Christoffer Robin var den som gav Nalle Puh honungsburken. Han måste kunna berätta var den är nu. Han står vid cykelsafarin nu. Gå och prata med honom!",
+    tipsFromCurrentCharacter: "Du klickade rätt! Jag är ledsen att jag inte kunde hjälpa dig, men Christoffer-Robin är bästa vän till Nalle Puh, så han vet kanske? Han var den som gav Nalle Puh honungsburken. Han måste kunna berätta var den är nu. Han står vid cykelsafarin nu. Gå och prata med honom!",
     nameOfPreviousCharacter: "I-or",
     locationImg: "../media/location-terrariet.jpg",
     locationName: "Terrariet"
 }, {
     id: 2,
-    questDescription: "Christoffer Robin står på cykelsafarin och letar efter elefanten eftersom han misstänker att elefanten har tagit honungsburken. Hitta elefanten på cykelsafarin och gå under den för att dubbelkolla att den inte gömmer honungsburken.",
+    questDescription: "Christoffer-Robin står på cykelsafarin och letar efter elefanten eftersom han misstänker att elefanten har tagit honungsburken. Hitta elefanten på cykelsafarin och gå under den för att dubbelkolla att den inte gömmer honungsburken.",
     questionType: "challenge",
     character: {
         name: "Christoffer-Robin",
-        description: "En äventyrlig, intelligent pojke som bor i Sjumilaskogen. Han har en livlig fantasi och spenderar det mesta av sin tid med att gå på äventyr i skogen. De andra karaktärerna är Christoffer Robins gosedjur och Nalle Puh är hans favorit. Han agerar lite som en förälder till de andra då dessa snarare är på nivån av ett småbarn. Han inser att han kommer växa upp och då kommer behöva skiljas från sina vänner.",
+        description: "En äventyrlig, intelligent pojke som bor i Sjumilaskogen. Han har en livlig fantasi och spenderar det mesta av sin tid med att gå på äventyr i skogen. De andra karaktärerna är Christoffer-Robins gosedjur och Nalle Puh är hans favorit. Han agerar lite som en förälder till de andra då dessa snarare är på nivån av ett småbarn. Han inser att han kommer växa upp och då kommer behöva skiljas från sina vänner.",
     },
-    tipsFromPreviousCharacter: "Du klickade rätt! Jag är ledsen att jag inte kunde hjälpa dig, men Robin är bästa vän till Nalle Puh, så han vet kanske? Christoffer Robin var den som gav Nalle Puh honungsburken. Han måste kunna berätta var den är nu. Han står vid cykelsafarin nu. Gå och prata med honom!",
+    tipsFromPreviousCharacter: "Du klickade rätt! Jag är ledsen att jag inte kunde hjälpa dig, men Christoffer-Robin är bästa vän till Nalle Puh, så han vet kanske? Han var den som gav Nalle Puh honungsburken. Han måste kunna berätta var den är nu. Han står vid cykelsafarin nu. Gå och prata med honom!",
     tipsFromCurrentCharacter: "Honungsburken är inte hos elefanten. Nu kommer jag ihåg att honungsburken en gång satt fast i ett hål. Minigolfen har många hål i marken, kika där!",
     nameOfPreviousCharacter: "Ru",
     locationImg: "../media/location-cykelsafarin.jpg",
@@ -112,7 +112,7 @@ const data = [{
     },
     tipsFromPreviousCharacter: "Honungsburken är inte hos elefanten. Nu kommer jag ihåg att honungsburken en gång satt fast i ett hål. Minigolfen har många hål i marken, kika där!",
     tipsFromCurrentCharacter: "Jag ser inte honungsburken i något hål här. Tiger kollade på uppträdanden tidigare idag på danstävlingen, kan honungsburken kanske vara där?",
-    nameOfPreviousCharacter: "Christoffer Robin",
+    nameOfPreviousCharacter: "Christoffer-Robin",
     locationImg: "../media/location-minigolfbanan.jpg",
     locationName: "Minigolfbanan"
 }, {
