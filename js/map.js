@@ -34,7 +34,7 @@ function renderCurrentLocationView(currentContent) {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
     } else {
-        alert("Geolocation is not supported by this browser.");
+        alert("Geolocation stöttas inte av den här webbläsaren.");
     }
 }
 

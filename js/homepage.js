@@ -4,6 +4,7 @@ function renderHomePage() {
         <div id="home1">
             <h1>Hej!</h1>
             <p>Nalle Puh har tappat bort <br> sin favorithonung! Vad <br> ska han göra nu? Kan du <br> hjälpa honom?</p>
+            <button id="downloadMapBtn" href="../NallePuh/media/nalle-puh-1.png" >Hämta karta</a></button>
             <img id="homeImg1" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
         </div>
         <div id="home2">
@@ -58,4 +59,26 @@ function renderHomePage() {
 
     const toStart = document.getElementById("to-start");
     toStart.addEventListener("click", renderStartPage1);
+
+
+    // download button
+    document.getElementById("downloadMapBtn").addEventListener("click", () => {
+        downloadImage("media/flower-vitsippa.jpeg");
+    });
+
+    async function downloadImage(imageSrc) {
+        const image = await fetch(imageSrc)
+        const imageBlog = await image.blob()
+        const imageURL = URL.createObjectURL(imageBlog)
+
+        const link = document.createElement('a')
+        link.href = imageURL
+        link.download = 'karta.jpeg'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+    }
+
 }
+
+

@@ -18,28 +18,40 @@
 }
 
 #home1 {
-    height: 37%;
+    height: 45%;
     margin: 0 8%;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-#home1 > p {
+#home1>p {
     position: relative;
     top: 8%;
+    margin-top: 0;
+}
+
+#downloadMapBtn {
+    height: var(--buttonHeight);
+    width: 50%;
+    background-color: var(--orange);
+    margin-top: 5vh;
+    border: none;
+    border-radius: 5px;
+    font-size: 2vh;
+    font-weight: 500;
 }
 
 #homeImg1 {
-    height: 65%;
+    height: 50%;
     position: absolute;
     right: 0;
-    bottom: 6%;
+    bottom: 10%;
 }
 
 #home2 {
     background-color: var(--white);
-    height: 35%;
+    height: 30%;
     display: flex;
 }
 
@@ -48,7 +60,7 @@
     width: 100%;
 }
 
-#home2Box > h2 {
+#home2Box>h2 {
     font-size: 2.4vh;
     font-weight: 600;
     margin-left: 8%;
@@ -62,7 +74,7 @@
     margin-top: 20px;
 }
 
-#scrollContainer > p {
+#scrollContainer>p {
     text-align: center;
 }
 
@@ -72,11 +84,11 @@
     text-align: center;
 }
 
-.scrollImg > p {
+.scrollImg>p {
     margin-top: 10px;
 }
 
-.scrollImg > div {
+.scrollImg>div {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -108,11 +120,11 @@
     background-image: url("../media/character-ru.png");
 }
 
-#scrollContainer > :last-child {
+#scrollContainer> :last-child {
     padding-right: 25px;
 }
 
-#scrollContainer > :first-child {
+#scrollContainer> :first-child {
     padding-left: 25px;
 }
 
@@ -125,7 +137,7 @@
     justify-content: center;
 }
 
-#home3 > p {
+#home3>p {
     position: relative;
     bottom: 6%;
 }
@@ -157,7 +169,7 @@
         position: initial;
     }
 
-    #home2Box > h2 {
+    #home2Box>h2 {
         margin-left: 20%;
     }
 }
