@@ -43,12 +43,12 @@ function displayContent(currentContent) {
 
 function createAlternatives(currentContent) {
   const alternatives = currentContent.alternatives;
-  const alternativeType = currentContent.alternativeType;
+  const questionType = currentContent.questionType;
   const alternativesContainer = document.querySelector(".alternatives-container");
 
   shuffleArray(alternatives);
 
-  if (alternativeType === "text") {
+  if (questionType === "text") {
     alternatives.forEach((alternative) => {
       const button = document.createElement("button");
       button.classList = "alternative-button alternative-text";
@@ -56,7 +56,7 @@ function createAlternatives(currentContent) {
       button.setAttribute("data-id", alternative.id);
       alternativesContainer.appendChild(button);
     });
-  } else if (alternativeType === "image") {
+  } else if (questionType === "image") {
     alternatives.forEach((alternative) => {
       const button = document.createElement("button");
       const img = document.createElement('img');
