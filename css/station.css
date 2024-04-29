@@ -41,6 +41,15 @@
   gap: 30px;
 }
 
+.challenge-done {
+  background-color: var(--orange);
+  height: 50px;
+  width: 100%;
+  font-size: 2vh;
+  border: none;
+  border-radius: 5px;
+}
+
 .alternatives-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

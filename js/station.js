@@ -51,7 +51,7 @@ function createResponse(currentContent) {
   if (questionType === "challenge") {
     const button = document.createElement("button");
     button.classList = "challenge-done";
-    button.innerText = "Klar";
+    button.innerText = "Klar med utmaning";
     responseContainer.appendChild(button);
 
     const challengeDoneButton = document.querySelector(".challenge-done");
