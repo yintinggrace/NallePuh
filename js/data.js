@@ -75,7 +75,7 @@ const data = [{
     questDescription: "Christoffer Robin står på cykelsafarin och letar efter elefanten eftersom han misstänker att elefanten har tagit honungsburken. Hitta elefanten på cykelsafarin och gå under den för att dubbelkolla att den inte gömmer honungsburken.",
     questionType: "challenge",
     character: {
-        name: "Christoffer Robin",
+        name: "Christoffer-Robin",
         description: "En äventyrlig, intelligent pojke som bor i Sjumilaskogen. Han har en livlig fantasi och spenderar det mesta av sin tid med att gå på äventyr i skogen. De andra karaktärerna är Christoffer Robins gosedjur och Nalle Puh är hans favorit. Han agerar lite som en förälder till de andra då dessa snarare är på nivån av ett småbarn. Han inser att han kommer växa upp och då kommer behöva skiljas från sina vänner.",
     },
     tipsFromPreviousCharacter: "Du klickade rätt! Jag är ledsen att jag inte kunde hjälpa dig, men Robin är bästa vän till Nalle Puh, så han vet kanske? Christoffer Robin var den som gav Nalle Puh honungsburken. Han måste kunna berätta var den är nu. Han står vid cykelsafarin nu. Gå och prata med honom!",

@@ -3,7 +3,7 @@ let currentIndex = 0;
 function handleToStationClick() {
   const currentContent = data[currentIndex];
   displayContent(currentContent);
-  createAlternatives(currentContent);
+  createResponse(currentContent);
 
   const aboutCharacter = document.querySelector(`.Om.${currentContent.character.name}`);
   aboutCharacter.addEventListener("click", function () {
@@ -36,19 +36,31 @@ function displayContent(currentContent) {
           </p>
 
           <div class="alternatives-container"></div>
+          <div class="response-container"></div>
         </div>
       </main>
     `;
 }
 
-function createAlternatives(currentContent) {
+function createResponse(currentContent) {
   const alternatives = currentContent.alternatives;
   const questionType = currentContent.questionType;
+  const responseContainer = document.querySelector(".response-container");
   const alternativesContainer = document.querySelector(".alternatives-container");
 
-  shuffleArray(alternatives);
+  if (questionType === "challenge") {
+    const button = document.createElement("button");
+    button.classList = "challenge-done";
+    button.innerText = "Klar";
+    responseContainer.appendChild(button);
 
-  if (questionType === "text") {
+    const challengeDoneButton = document.querySelector(".challenge-done");
+    if (challengeDoneButton) {
+      challengeDoneButton.addEventListener("click", () => {
+        renderTipPopUp(currentContent.id, "tipsFromCurrentCharacter");
+      });
+    }
+  } else if (questionType === "text") {
     alternatives.forEach((alternative) => {
       const button = document.createElement("button");
       button.classList = "alternative-button alternative-text";
@@ -69,11 +81,11 @@ function createAlternatives(currentContent) {
     });
   }
 
-  document.querySelectorAll(".alternative-button").forEach(button => {
-    button.addEventListener("click", (event) => {
-      checkAnswer(event, currentContent, "createAlternatives");
+    document.querySelectorAll(".alternative-button").forEach(button => {
+      button.addEventListener("click", (event) => {
+        checkAnswer(event, currentContent, "createAlternatives");
+      });
     });
-  });
 }
 
 function checkAnswer(event, currentContent, context) {
@@ -139,7 +151,7 @@ function createButtonGroup(iconClass, text) {
 }
 
 function renderLastStation() {
-  const lastQuestion = data.find(item => item.id === 5);
+  const lastQuestion = data.find(item => item.id === 6);
   const questDescription = lastQuestion.questDescription;
   const alternatives = createAlternativesLastStation(lastQuestion);
 
