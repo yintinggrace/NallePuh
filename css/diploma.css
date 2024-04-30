@@ -1,24 +1,133 @@
-#diplomaPage {
+.diploma-container {
+    padding: 30px;
+    height: 100vh;
+    box-sizing: border-box;
     position: relative;
-    overflow: hidden;
 }
 
-#diploma {
-    width: 2480px;
-    height: 3508px;
-    background-color: var(--orange);
+.diploma-content {
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+.download-diploma-text {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
-#diploma.hidden {
+.download-select {
+    height: 30px;
+    font-size: 18px;
+}
+
+.download-button {
+    height: 50px;
+    width: 100%;
+    font-size: 2vh;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.diploma-nalle-puh {
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+.hidden {
     display: none;
 }
 
-#coverUp {
-    width: 100%;
-    height: 100%;
-    background-color: grey;
+.active {
+    background-color: var(--orange);
+}
+
+.disactive {
+    background-color: var(--white);
+}
+
+@media print {
+    .diploma-container {
+        padding: 60px;
+    }
+
+    .appreciation,
+    .download-diploma,
+    .diploma-nalle-puh {
+        display: none;
+    }
+
+    .print-username,
+    .print-statement,
+    .print-good-job,
+    .print-date,
+    .print-image-all-characters {
+        display: block;
+    }
+
+    .print-username {
+        font-family: piglet, "Inter";
+        font-size: 50px;
+    }
+
+    .print-statement {
+        font-size: 30px;
+    }
+
+    .print-good-job {
+        font-size: 25px;
+    }
+
+    .print-image-all-characters {
+        height: 50vh;
+        width: 55vw;
+        position: absolute;
+        right: 22%;
+        bottom: 5%;
+    }
+
+    @page {
+        margin: 0;
+    }
+
+    @page {
+        margin-top: 0;
+    }
+
+    @page {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .diploma-content {
+        font-size: 16px;
+    }
+
+    .download-select {
+        font-size: 14px;
+    }
+
+    .diploma-nalle-puh {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .download-button {
+        width: 300px;
+    }
+
+    .diploma-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

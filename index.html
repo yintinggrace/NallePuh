@@ -29,38 +29,6 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBntwZlNVDr7QfNDzFNemomWdWJi2g0liY&loading=async&callback=renderHomePage">
         </script>
 
-<script>
-    function generateImage() {
-
-        document.getElementById("diploma").classList.remove("hidden");
-        document.head.innerHTML += `
-        <style>
-            body {
-                overflow: hidden;
-            }
-            .content {
-                /* Add your styles for the content here */
-            }
-        </style>
-        `;
-        // Capture the diploma div as an image
-        html2canvas(document.getElementById('diploma'), {
-            onrendered: function(canvas) {
-                // Convert the canvas to PNG format
-                var image = canvas.toDataURL("image/png");
-
-                // Create a temporary link to trigger the download
-                var link = document.createElement('a');
-                link.download = 'diploma.png';
-                link.href = image;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            }
-        });
-    }
-</script>
-
     <script src="js/data.js"></script>
     <script src="js/homepage.js"></script>
     <script src="js/startpages.js"></script>
@@ -70,7 +38,6 @@
     <script src="js/index.js"></script>
     <script src="js/map.js"></script>
     <script src="js/diploma.js"></script>
-
 </body>
 
 </html>
