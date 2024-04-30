@@ -10,32 +10,38 @@ function renderDownloadDiplomaPage() {
 
     body.innerHTML = `
         <div class="diploma-container">
-            <div class="diploma-content">
-                <p class="appreciation">Tack för att du har hjälpt till<span class="username"></span>! Du är en honungssparare! Nalle Puh vill visa sin
-                uppskattning genom att ge dig ett diplom.</p>
+            <div class="diploma-nonprint">
+                <div class="diploma-content">
+                    <p class="appreciation">Tack för att du har hjälpt till<span class="username"></span>! Du är en honungssparare! Nalle Puh vill visa sin
+                    uppskattning genom att ge dig ett diplom.</p>
 
-                <h1 class="print-username hidden"><span class="username"></span></h1>
-                <p class="print-statement hidden">har framgångsrikt hjälpt Nalle Puh och hans vänner att lösa alla problem och rädda honungsburken i Folkets Park.</p>
-                <p class="print-good-job hidden">Bra jobbat,<span class="username"></span>!</p>
-                <p class="print-date hidden">${formattedDate}</p>
-
-                <div class="download-diploma">
-                    <div class="download-diploma-text">
-                        <p>Ladda ner diplom för</p>
-                        <select class="download-select">
-                            <option value="">Välj namn</option>
-                            ${namesArray.map(name => (`
-                                <option value="${name}">${name}</option>
-                            `))}
-                        </select>
-                        </div>
-                    <button class="download-button">Ladda ned</button>
+                    <div class="download-diploma">
+                        <div class="download-diploma-text">
+                            <p>Ladda ner/Skriva ut diplom för</p>
+                            <select class="download-select">
+                                <option value="">Välj namn</option>
+                                ${namesArray.map(name => (`
+                                    <option value="${name}">${name}</option>
+                                `))}
+                            </select>
+                            </div>
+                        <button class="download-button">Ladda ned/Skriva ut</button>
+                    </div>
                 </div>
+
+                <img class="diploma-nalle-puh" src="../NallePuh/media/diploma-nalle-puh.png" alt="Nalle Puh">
             </div>
 
-            <img class="diploma-nalle-puh" src="../NallePuh/media/diploma-nalle-puh.png" alt="Nalle Puh">
-            <img class="print-image-all-characters hidden" src="../NallePuh/media/diploma-all-characters.png" alt="all characters">
-
+            <div class="diploma-print hidden">
+                <div class="print-text">
+                    <h1 class="print-username"><span class="username"></span></h1>
+                    <p class="print-statement">har framgångsrikt hjälpt Nalle Puh och hans vänner att lösa alla problem och rädda honungsburken i Folkets Park.</p>
+                    <p class="print-good-job">Bra jobbat,<span class="username"></span>!</p>
+                    <p class="print-date">${formattedDate}</p>
+                </div>
+                <img class="print-image-all-characters" src="../NallePuh/media/diploma-all-characters.png" alt="all characters">
+                </div>
+            </div>
         </div>
     `;
 

@@ -56,18 +56,13 @@
         padding: 60px;
     }
 
-    .appreciation,
-    .download-diploma,
-    .diploma-nalle-puh {
+    .diploma-nonprint {
         display: none;
     }
 
-    .print-username,
-    .print-statement,
-    .print-good-job,
-    .print-date,
-    .print-image-all-characters {
+    .diploma-print {
         display: block;
+        width: 100%;
     }
 
     .print-username {
@@ -118,7 +113,6 @@
         width: 250px;
     }
 }
-
 
 @media screen and (min-width: 769px) {
     .download-button {
