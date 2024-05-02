@@ -31,6 +31,10 @@
     margin-top: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 #downloadMapBtn {
     height: var(--buttonHeight);
     width: 50%;
@@ -145,11 +149,7 @@
     }
 
     #home1 {
-        flex-direction: initial;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        text-align: center;
+        display: none;
     }
 
     #homeImg1 {
@@ -159,5 +159,21 @@
 
     #home2Box>h2 {
         margin-left: 20%;
+    }
+
+    .deskop-header {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin: 30px;
+        gap: 50px;
+    }
+
+    .deskop-header-left {
+        width: 30%;
+    }
+
+    .deskop-header-right {
+        height: 65%;
     }
 }

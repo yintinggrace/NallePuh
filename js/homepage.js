@@ -7,6 +7,16 @@ function renderHomePage() {
                 <button id="downloadMapBtn" href="../NallePuh/media/nalle-puh-1.png" >Hämta karta</a></button>
                 <img id="homeImg1" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
             </div>
+            <div class="deskop-header hidden">
+                <div class="deskop-header-left">
+                    <div class="deskop-header-text">
+                        <h1>Hej!</h1>
+                        <p>Nalle Puh har tappat bort sin favorithonung! Vad ska han göra nu? Kan du hjälpa honom?</p>
+                    </div>
+                        <button id="downloadMapBtn" href="../NallePuh/media/nalle-puh-1.png">Hämta karta</a></button>
+                </div>
+                <img class="deskop-header-right" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
+            </div>
             <div id="home2">
                 <div id="home2Box">
                     <h2>Om Nalle Puh och hans vänner</h2>
