@@ -143,7 +143,7 @@ const data = [{
     locationName: "Clownen"
 },{
     id: 6,
-    questDescription: "Nu har du äntligen hittat Nalle Puhs honungsburk. Klicka på den bilden som liknar stället som du hittade honungen på för att säkerställa att du verkligen hittade Nalle Puhs honungsburk. ",
+    questDescription: "Nu har du/ni äntligen hittat Nalle Puhs honungsburk. Klicka på den bilden som liknar stället som du/ni hittade honungen på för att säkerställa att du/ni verkligen hittade Nalle Puhs honungsburk. ",
     alternatives: [
         {
             id: 0,
