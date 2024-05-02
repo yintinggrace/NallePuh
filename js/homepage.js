@@ -62,7 +62,7 @@ function renderHomePage() {
 
     document.querySelectorAll(".scrollImg").forEach(element => {
         element.addEventListener("click", (e) => {
-            let targetName = e.target.parentNode.querySelector("p").textContent;
+            let targetName = e.target.querySelector("p").textContent;
 
             renderCharacterInfo(targetName, "homepage");
         });
