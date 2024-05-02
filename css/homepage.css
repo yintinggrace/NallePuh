@@ -97,33 +97,16 @@
     width: 100px;
 }
 
-#nallePuhHomeImg {
-    background-image: url("../media/character-nalle-puh.png");
+.nalle-puh,
+.I-or,
+.Tiger,
+.Nasse,
+.Kanin,
+.Ru,
+.Christoffer-Robin {
+    height: 100px;
 }
 
-#iorHomeImg {
-    background-image: url("../media/character-i-or.png");
-}
-
-#tigerHomeImg {
-    background-image: url("../media/character-tiger.png");
-}
-
-#nasseHomeImg {
-    background-image: url("../media/character-nasse.png");
-}
-
-#kaninHomeImg {
-    background-image: url("../media/character-kanin.png");
-}
-
-#ruHomeImg {
-    background-image: url("../media/character-ru.png");
-}
-
-#christopherRobinHomeImg {
-    background-image: url("../media/character-christopher-robin.png");
-}
 
 #scrollContainer> :last-child {
     padding-right: 25px;
