@@ -32,7 +32,7 @@ function renderCharacterInfo(characterName, originView) {
 
     const characterImg = document.createElement("img");
 
-    characterImg.src = `../NallePuh/media/character-${questObject.character.name}.png`;
+    characterImg.src = `../NallePuh/media/character-${questObject.character.name.toLowerCase()}.png`;
     characterImg.alt = `${questObject.character.name}`;
     characterImg.id = "character-image";
     document.querySelector("#characterImage").appendChild(characterImg);
