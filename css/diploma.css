@@ -10,17 +10,6 @@
     font-size: 20px;
 }
 
-.download-diploma-text {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.download-select {
-    height: 30px;
-    font-size: 18px;
-}
-
 .download-button {
     height: 50px;
     width: 100%;
@@ -28,84 +17,20 @@
     border: none;
     border-radius: 5px;
     margin-top: 30px;
+    background-color: var(--orange);
 }
 
 .diploma-nalle-puh {
     height: 300px;
     width: 300px;
-    margin-top: 200px;
     position: absolute;
     right: 30px;
     bottom: 0;
 }
 
-.hidden {
-    display: none;
-}
-
-.active {
-    background-color: var(--orange);
-}
-
-.disactive {
-    background-color: var(--white);
-}
-
-@media print {
-    .diploma-container {
-        padding: 60px;
-    }
-
-    .diploma-nonprint {
-        display: none;
-    }
-
-    .diploma-print {
-        display: block;
-        width: 100%;
-    }
-
-    .print-username {
-        font-family: piglet, "Inter";
-        font-size: 50px;
-    }
-
-    .print-statement {
-        font-size: 30px;
-    }
-
-    .print-good-job {
-        font-size: 25px;
-    }
-
-    .print-image-all-characters {
-        height: 50vh;
-        width: 55vw;
-        position: absolute;
-        right: 22%;
-        bottom: 5%;
-    }
-
-    @page {
-        margin: 0;
-    }
-
-    @page {
-        margin-top: 0;
-    }
-
-    @page {
-        margin-bottom: 0;
-    }
-}
-
 @media only screen and (max-width: 375px) {
     .diploma-content {
         font-size: 16px;
-    }
-
-    .download-select {
-        font-size: 14px;
     }
 
     .diploma-nalle-puh {
