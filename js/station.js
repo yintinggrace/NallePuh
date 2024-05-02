@@ -1,4 +1,10 @@
 let currentIndex = 0;
+let childrenNames = localStorage.getItem("childrenNames");
+let namesArray = JSON.parse(childrenNames);
+
+namesArray = namesArray.map(name =>
+    name.replace(/\b\w/g, char => char.toUpperCase())
+);
 
 function handleToStationClick() {
   const currentContent = data[currentIndex];
@@ -155,15 +161,24 @@ function renderLastStation() {
   const questDescription = lastQuestion.questDescription;
   const alternatives = createAlternativesLastStation(lastQuestion);
 
+  let congratulationMessage = "Grattis";
+  if (namesArray.length === 1) {
+    congratulationMessage += ` ${namesArray[0]}!`;
+  } else if (namesArray.length === 2) {
+    congratulationMessage += ` ${namesArray[0]} och ${namesArray[1]}!`;
+  } else {
+    congratulationMessage += ` ${namesArray.slice(0, -1).join(', ')} och ${namesArray.slice(-1)}!`;
+  }
+
   body.innerHTML = `
     <main class="station-main final-main">
       <div class="final-station-container">
         <div class="final-station-text-container">
-            <p class="congrats-title">Grattis!</p>
+            <p class="congrats-title">${congratulationMessage}</p>
         </div>
         <div class="question-content">
           <div class="congrats-description">${questDescription}</div>
-          <div class=" alternatives-container">${alternatives}</div>
+          <div class="alternatives-container">${alternatives}</div>
         </div>
       </div>
     </main>
@@ -175,6 +190,7 @@ function renderLastStation() {
     });
   });
 }
+
 
 function createAlternativesLastStation(currentContent) {
   const alternatives = currentContent.alternatives;
