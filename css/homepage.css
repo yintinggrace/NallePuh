@@ -177,4 +177,8 @@
     .deskop-header-right {
         height: 65%;
     }
+
+    .downloadMapBtn {
+        width: 100%;
+    }
 }
