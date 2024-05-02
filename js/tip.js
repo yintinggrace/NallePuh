@@ -1,8 +1,6 @@
 function renderTipPopUp(questId, tips) {
     const questObject = data.find(element => element.id === questId);
 
-    // här måste vi fixa så att den läggs som en overlay och inte rensar html
-
     let titleContent = questObject.character.name;
     let tipsText = questObject.tipsFromCurrentCharacter;
     let buttonText = "Fortsätt";

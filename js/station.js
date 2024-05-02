@@ -191,7 +191,6 @@ function renderLastStation() {
   });
 }
 
-
 function createAlternativesLastStation(currentContent) {
   const alternatives = currentContent.alternatives;
   let alternativesHTML = "";
@@ -206,11 +205,3 @@ function createAlternativesLastStation(currentContent) {
 
   return alternativesHTML;
 }
-
-/*
-function renderDownloadDiplomaPage() {
-  body.innerHTML = `
-    <div>DownloadDiplomaPage</div>
-  `;
-}
-*/

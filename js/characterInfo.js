@@ -1,4 +1,3 @@
-
 function renderCharacterInfo(characterName, originView) {
 
     document.querySelector("body").style.overflow = `hidden`;
@@ -15,7 +14,6 @@ function renderCharacterInfo(characterName, originView) {
     } else {
         questObject = data.find(element => element.character.name === characterName);
     }
-
 
     body.innerHTML = `
     <div id="characterInfoContainer">
@@ -51,6 +49,5 @@ function renderCharacterInfo(characterName, originView) {
         else {
             handleToStationClick();
         }
-
     });
 }

@@ -1,24 +1,20 @@
-// AIzaSyBntwZlNVDr7QfNDzFNemomWdWJi2g0liY
-
 function renderCurrentLocationView(currentContent) {
-
     body.style.overflow = `hidden`;
 
     body.innerHTML = `
-            <div id="closeBtn"></div>
-            <p class="currentLocationName-desktop"></p>
-            <div id="mapAndCurrentLocation">
-                <div id="smallMap" class="map"></div>
-                <div id="currentLocation">
-                    <div id="currentLocationImg"></div>
-                    <p class="currentLocationName-mobile"></p>
-                </div>
+        <div id="closeBtn"></div>
+        <p class="currentLocationName-desktop"></p>
+        <div id="mapAndCurrentLocation">
+            <div id="smallMap" class="map"></div>
+            <div id="currentLocation">
+                <div id="currentLocationImg"></div>
+                <p class="currentLocationName-mobile"></p>
             </div>
-        `;
+        </div>
+    `;
 
     document.querySelector("#closeBtn").addEventListener("click", () => {
         body.style.overflow = `auto`;
-
         handleToStationClick();
     });
 
@@ -41,13 +37,12 @@ function renderCurrentLocationView(currentContent) {
 }
 
 function renderFullscreenMap(currentContent) {
-
     body.style.overflow = `hidden`;
 
     body.innerHTML = `
-            <div id="closeBtn"></div>
-            <div id="fullscreenMap" class="map"></div>
-        `;
+        <div id="closeBtn"></div>
+        <div id="fullscreenMap" class="map"></div>
+    `;
 
     document.querySelector("#closeBtn").addEventListener("click", () => {
         renderCurrentLocationView(currentContent);
@@ -73,7 +68,6 @@ function renderFullscreenMap(currentContent) {
     }
 }
 
-
 function showPosition(position) {
 
     const latitude = position.coords.latitude;
@@ -92,9 +86,7 @@ function renderMap(lat, lng, marker) {
     };
 
     const mapElement = document.querySelector(".map");
-
     const map = new google.maps.Map(mapElement, mapOptions);
-
 
     // det kommer upp en varning här men det gör inget
     if (marker) {
@@ -103,7 +95,6 @@ function renderMap(lat, lng, marker) {
             map: map,
         })
     }
-
 }
 
 function showError(error) {
