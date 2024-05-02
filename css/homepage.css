@@ -35,7 +35,7 @@
     display: none;
 }
 
-#downloadMapBtn {
+.downloadMapBtn {
     height: var(--buttonHeight);
     width: 50%;
     background-color: var(--orange);

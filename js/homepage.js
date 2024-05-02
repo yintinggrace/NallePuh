@@ -4,7 +4,7 @@ function renderHomePage() {
             <div id="home1">
                 <h1>Hej!</h1>
                 <p>Nalle Puh har tappat bort <br> sin favorithonung! Vad <br> ska han göra nu? Kan du <br> hjälpa honom?</p>
-                <button id="downloadMapBtn" href="../NallePuh/media/nalle-puh-1.png" >Hämta karta</a></button>
+                <button class="downloadMapBtn" data-map-path="../NallePuh/media/map.png">Hämta karta</button>
                 <img id="homeImg1" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
             </div>
             <div class="deskop-header hidden">
@@ -13,7 +13,7 @@ function renderHomePage() {
                         <h1>Hej!</h1>
                         <p>Nalle Puh har tappat bort sin favorithonung! Vad ska han göra nu? Kan du hjälpa honom?</p>
                     </div>
-                        <button id="downloadMapBtn" href="../NallePuh/media/nalle-puh-1.png">Hämta karta</a></button>
+                    <button class="downloadMapBtn" data-map-path="../NallePuh/media/map.png">Hämta karta</button>
                 </div>
                 <img class="deskop-header-right" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
             </div>
@@ -71,14 +71,16 @@ function renderHomePage() {
     const toStart = document.getElementById("to-start");
     toStart.addEventListener("click", renderStartPage1);
 
-    const downloadMapBtn = document.getElementById("downloadMapBtn");
-    downloadMapBtn.addEventListener("click", () => {
-        const mapPath = "../NallePuh/media/map.png";
-        const anchorElement = document.createElement("a");
-        anchorElement.href = mapPath;
-        anchorElement.target = '_blank';
-        anchorElement.download = 'map.png';
-        anchorElement.click();
+    const downloadMapBtns = document.querySelectorAll(".downloadMapBtn");
+    downloadMapBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const mapPath = btn.getAttribute("data-map-path");
+            const anchorElement = document.createElement("a");
+            anchorElement.href = mapPath;
+            anchorElement.target = '_blank';
+            anchorElement.download = 'map.png';
+            anchorElement.click();
+        });
     });
 }
 
