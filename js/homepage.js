@@ -71,23 +71,15 @@ function renderHomePage() {
     const toStart = document.getElementById("to-start");
     toStart.addEventListener("click", renderStartPage1);
 
-    // download button
-    document.getElementById("downloadMapBtn").addEventListener("click", () => {
-        downloadImage("media/flower-vitsippa.jpeg");
+    const downloadMapBtn = document.getElementById("downloadMapBtn");
+    downloadMapBtn.addEventListener("click", () => {
+        const mapPath = "../NallePuh/media/map.png";
+        const anchorElement = document.createElement("a");
+        anchorElement.href = mapPath;
+        anchorElement.target = '_blank';
+        anchorElement.download = 'map.png';
+        anchorElement.click();
     });
-
-    async function downloadImage(imageSrc) {
-        const image = await fetch(imageSrc)
-        const imageBlog = await image.blob()
-        const imageURL = URL.createObjectURL(imageBlog)
-
-        const link = document.createElement('a')
-        link.href = imageURL
-        link.download = 'karta.jpeg'
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
-    }
 }
 
 
