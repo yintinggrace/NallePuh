@@ -16,16 +16,16 @@ function renderCharacterInfo(characterName, originView) {
     }
 
     body.innerHTML = `
-    <div id="characterInfoContainer">
-
-        <div id="closeCrossBtn"></div>
-        <div id="characterTextContainer">
-            <p id="characterName">${questObject.character.name}</p>
-            <p id="characterDescription">${questObject.character.description}</p>
+        <div id="characterInfoContainer">
+            <div id="closeCrossBtn"></div>
+            <div id="characterTextContainer">
+                <div id="characterText">
+                    <p id="characterName">${questObject.character.name}</p>
+                    <p id="characterDescription">${questObject.character.description}</p>
+                </div>
+                <div id="characterImage"></div>
+            </div>
         </div>
-        <div id="characterImage"></div>
-
-    </div>
     `;
 
     const characterImg = document.createElement("img");
