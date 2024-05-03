@@ -26,6 +26,7 @@ body {
 
 button {
     font-family: "Inter", sans-serif;
+    color: var(--black);
 }
 
 p {
