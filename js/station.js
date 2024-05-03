@@ -1,10 +1,4 @@
 let currentIndex = 0;
-let childrenNames = localStorage.getItem("childrenNames");
-let namesArray = JSON.parse(childrenNames);
-
-namesArray = namesArray.map(name =>
-    name.replace(/\b\w/g, char => char.toUpperCase())
-);
 
 function handleToStationClick() {
   const currentContent = data[currentIndex];
@@ -157,6 +151,13 @@ function createButtonGroup(iconClass, text) {
 }
 
 function renderLastStation() {
+  let childrenNames = localStorage.getItem("childrenNames");
+  let namesArray = JSON.parse(childrenNames);
+
+  namesArray = namesArray.map(name =>
+      name.replace(/\b\w/g, char => char.toUpperCase())
+  );
+
   const lastQuestion = data.find(item => item.id === 6);
   const questDescription = lastQuestion.questDescription;
   const alternatives = createAlternativesLastStation(lastQuestion);
