@@ -31,7 +31,7 @@ function renderTipPopUp(questId, tips) {
                 currentIndex = questId;
             } else {
                 currentIndex++;
-                if (currentIndex === 5) {
+                if (currentIndex === 6) {
                     renderLastStation();
                     return;
                 }
