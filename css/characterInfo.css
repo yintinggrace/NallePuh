@@ -18,6 +18,10 @@
     height: 100vh;
 }
 
+#characterText {
+    margin-bottom: 20vh;
+}
+
 #characterName {
     font-family: piglet, "Inter";
     font-size: 5vh;
