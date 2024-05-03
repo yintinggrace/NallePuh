@@ -110,7 +110,7 @@ function renderStartPage3() {
                 <br></br>
                 Hans vänner blev snabbt oroliga när de insåg att deras kära vän var i nöd. De befinner sig utspridda i Folkets Park och letar efter honungen. Hjälp Nalle Puh och hans vänner att hitta honungen genom att prata med dem. Nalle Puh tar emot all hjälp han kan få och följer gärna med dig eftersom han tror att du kan hjälpa honom extra mycket!</p>
                 <br></br>
-                <p>Börja resan hos I:or. Han <br> finns vid x kiosken.</p>
+                <p>Börja resan hos I:or. Han <br> finns vid kiosken.</p>
             </div>
             <div id="page3Section2">
                 <div id="honeyImg"></div>
