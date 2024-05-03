@@ -21,29 +21,25 @@ function renderStartPage1() {
         </container>
     `;
 
-    document.addEventListener("click", function (event) {
-        if (event.target.classList.contains("back1")) {
-            renderHomePage();
-        }
+    document.querySelector(".back1").addEventListener("click", function () {
+        renderHomePage();
     });
 
-    document.addEventListener("click", function (event) {
-        if (event.target.classList.contains("continue1")) {
 
-            const inputElement = document.getElementById("numberOfChildrenInput");
-            const numberOfChildren = parseInt(inputElement.value);
+    document.querySelector(".continue1").addEventListener("click", function () {
+        const inputElement = document.getElementById("numberOfChildrenInput");
+        const numberOfChildren = parseInt(inputElement.value);
 
-            if (!isNaN(numberOfChildren) && numberOfChildren > 0 && numberOfChildren <= 10) {
-                const maxChildrenMessage = document.getElementById("maxChildrenMessage");
-                maxChildrenMessage.style.display = "none";
-                renderStartPage2(numberOfChildren);
-            } else {
-                const maxChildrenMessage = document.getElementById("maxChildrenMessage");
-                maxChildrenMessage.textContent = "Skriv in antal barn, max 10";
-                maxChildrenMessage.style.display = "block";
-            }
+        if (!isNaN(numberOfChildren) && numberOfChildren > 0 && numberOfChildren <= 10) {
+            const maxChildrenMessage = document.getElementById("maxChildrenMessage");
+            maxChildrenMessage.style.display = "none";
+            renderStartPage2(numberOfChildren);
+        } else {
+            const maxChildrenMessage = document.getElementById("maxChildrenMessage");
+            maxChildrenMessage.textContent = "Skriv in antal barn, max 10";
+            maxChildrenMessage.style.display = "block";
         }
-    });
+    })
 }
 
 function generateInputFields(numberOfChildren) {
@@ -77,15 +73,12 @@ function renderStartPage2(numberOfChildren) {
         </container>
     `;
 
-    document.addEventListener("click", function (event) {
-        if (event.target.classList.contains("back2")) {
-            renderStartPage1();
-        }
+    document.querySelector(".back2").addEventListener("click", function () {
+        renderStartPage1();
     });
 
-    document.addEventListener("click", function (event) {
-        if (event.target.classList.contains("continue2")) {
-            const inputElements = document.querySelectorAll("#childrenForm input");
+    document.querySelector(".continue2").addEventListener("click", function () {
+        const inputElements = document.querySelectorAll("#childrenForm input");
             const childrenNames = [];
             let allInputsFilled = true;
 
@@ -96,18 +89,17 @@ function renderStartPage2(numberOfChildren) {
                 childrenNames.push(input.value);
             });
 
-            const errorMessage = document.getElementById("errorMessage");
-            if (!allInputsFilled) {
-                errorMessage.style.display = "block";
-            } else {
-                errorMessage.style.display = "none";
+        const errorMessage = document.getElementById("errorMessage");
+        if (!allInputsFilled) {
+            errorMessage.style.display = "block";
+        } else {
+            errorMessage.style.display = "none";
 
-                localStorage.setItem("childrenNames", JSON.stringify(childrenNames));
+            localStorage.setItem("childrenNames", JSON.stringify(childrenNames));
 
-                renderStartPage3();
-            }
+            renderStartPage3();
         }
-    });
+    })
 }
 
 function renderStartPage3() {
