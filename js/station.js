@@ -162,6 +162,8 @@ function renderLastStation() {
   const questDescription = lastQuestion.questDescription;
   const alternatives = createAlternativesLastStation(lastQuestion);
 
+  localStorage.removeItem("childrenNames");
+
   let congratulationMessage = "Grattis";
   if (namesArray.length === 1) {
     congratulationMessage += ` ${namesArray[0]}!`;
