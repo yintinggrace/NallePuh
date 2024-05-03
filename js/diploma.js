@@ -19,7 +19,10 @@ function renderDownloadDiplomaPage() {
     downloadButton.addEventListener("click", handleDownloadButtonClick);
 
     const goHome = document.querySelector('.go-home');
-    goHome.addEventListener("click", renderHomePage);
+    goHome.addEventListener("click", function() {
+        renderHomePage();
+        currentIndex = 0;
+    });
 }
 
 function handleDownloadButtonClick() {
