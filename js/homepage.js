@@ -60,11 +60,11 @@ function renderHomePage() {
         </container>
 `;
 
-    document.querySelectorAll(".scrollImg").forEach(element => {
-        element.addEventListener("click", (e) => {
-            let targetName = e.target.querySelector("p").textContent;
-
-            renderCharacterInfo(targetName, "homepage");
+    const scrollImgDivs = document.querySelectorAll(".scrollImg");
+    scrollImgDivs.forEach(div => {
+        const characterName = div.querySelector("p").textContent;
+        div.addEventListener("click", () => {
+            renderCharacterInfo(characterName, "homepage");
         });
     });
 
