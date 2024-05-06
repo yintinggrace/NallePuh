@@ -66,26 +66,26 @@ const data = [{
         description: "Ru är en glad och energisk känguru. Han gillar att ge sig ut på äventyr utomhus och tycker därför om apor då de är äventyrliga. Ru har perioder då han är särskilt intresserad i vissa ämnen och aktiviteter och är känslig för ljud och beröring.",
     },
     tipsFromPreviousCharacter: "Tack så mycket för tipset om glassen, den verkar jättegod! Jag har däremot inte sett honungsburken men såg Ru borta vid terrariet innan. Jag har hört att djuren där är mycket förtjusta i honung. Kanske har de smakat lite på Nalle Puhs honung?",
-    tipsFromCurrentCharacter: "Jag är ledsen att jag inte kunde hjälpa dig, men Christoffer-Robin är bästa vän till Nalle Puh, så han vet kanske? Han var den som gav Nalle Puh honungsburken. Han måste kunna berätta var den är nu. Han står vid cykelsafarin nu. Gå och prata med honom!",
+    tipsFromCurrentCharacter: "Jag är ledsen att jag inte kunde hjälpa dig, men Christoffer-Robin är bästa vän till Nalle Puh, så han vet kanske? Han var den som gav Nalle Puh honungsburken. Han måste kunna berätta var den är nu. Han står vid cykelsafarin, gå och prata med honom!",
     nameOfPreviousCharacter: "I-or",
     locationImg: "../media/location-terrariet.jpg",
     locationName: "Terrariet"
 }, {
     id: 2,
-    questDescription: "Christoffer-Robin står på cykelsafarin och letar efter elefanten eftersom han misstänker att elefanten har tagit honungsburken. Hitta elefanten på cykelsafarin och gå under den för att dubbelkolla att den inte gömmer honungsburken.",
+    questDescription: "Christoffer-Robin står på cykelsafarin och letar efter elefanten eftersom han misstänker att elefanten har tagit honungsburken. Hitta elefanten på cykelsafarin och titta under den för att kolla så att den inte gömmer honungsburken.",
     questionType: "challenge",
     character: {
         name: "Christoffer-Robin",
-        description: "En äventyrlig, intelligent pojke som bor i Sjumilaskogen. Han har en livlig fantasi och spenderar det mesta av sin tid med att gå på äventyr i skogen. De andra karaktärerna är Christoffer-Robins gosedjur och Nalle Puh är hans favorit. Han agerar lite som en förälder till de andra då dessa snarare är på nivån av ett småbarn. Han inser att han kommer växa upp och då kommer behöva skiljas från sina vänner.",
+        description: "En äventyrlig, intelligent pojke som bor i Sjumilaskogen. Han har en livlig fantasi och spenderar den mesta av sin tid med att gå på äventyr i skogen.",
     },
-    tipsFromPreviousCharacter: "Jag är ledsen att jag inte kunde hjälpa dig, men Christoffer-Robin är bästa vän till Nalle Puh, så han vet kanske? Han var den som gav Nalle Puh honungsburken. Han måste kunna berätta var den är nu. Han står vid cykelsafarin nu. Gå och prata med honom!",
+    tipsFromPreviousCharacter: "Jag är ledsen att jag inte kunde hjälpa dig, men Christoffer-Robin är bästa vän till Nalle Puh, så han vet kanske? Han var den som gav Nalle Puh honungsburken. Han måste kunna berätta var den är nu. Han står vid cykelsafarin, gå och prata med honom!",
     tipsFromCurrentCharacter: "Honungsburken är inte hos elefanten. Nu kommer jag ihåg att honungsburken en gång satt fast i ett hål. Minigolfen har många hål i marken, kika där!",
     nameOfPreviousCharacter: "Ru",
     locationImg: "../media/location-cykelsafarin.jpg",
     locationName: "Cykelsafarin"
 }, {
     id: 3,
-    questDescription: "Kanin har fastnat i sina tankar. Han försöker räkna golfbanorna men tappar alltid räkningen efter bana tre. Räkna hur många banor det finns på efter hål tre och plussa ihop det med 3.  ",
+    questDescription: "Kanin har fastnat i sina tankar. Han försöker räkna golfbanorna men tappar alltid räkningen efter bana tre. Räkna hur många banor det finns efter hål tre och plussa ihop det med 3.",
     questionType: "text",
     alternatives: [
         {
@@ -141,7 +141,7 @@ const data = [{
     nameOfPreviousCharacter: "Tiger",
     locationImg: "../media/location-clownen.jpg",
     locationName: "Clownen"
-},{
+}, {
     id: 6,
     questDescription: "Nu har du/ni äntligen hittat Nalle Puhs honungsburk. Klicka på den bilden som liknar stället som du/ni hittade honungen på för att säkerställa att du/ni verkligen hittade Nalle Puhs honungsburk. ",
     alternatives: [

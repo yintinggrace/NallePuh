@@ -7,17 +7,18 @@
 
 .diploma-content {
     margin-top: 80px;
-    font-size: 20px;
+    font-size: 2vh;
 }
 
 .download-button,
-.go-home {
+.go-home,
+.go-to-form {
     height: 50px;
     width: 100%;
     font-size: 2vh;
     border: none;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 15px;
     background-color: var(--orange);
 }
 
@@ -41,6 +42,7 @@
 }
 
 @media screen and (min-width: 769px) {
+
     .download-button,
     .go-home {
         width: 300px;

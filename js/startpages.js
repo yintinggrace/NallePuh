@@ -79,15 +79,15 @@ function renderStartPage2(numberOfChildren) {
 
     document.querySelector(".continue2").addEventListener("click", function () {
         const inputElements = document.querySelectorAll("#childrenForm input");
-            const childrenNames = [];
-            let allInputsFilled = true;
+        const childrenNames = [];
+        let allInputsFilled = true;
 
-            inputElements.forEach(function (input) {
-                if (input.value.trim() === "") {
-                    allInputsFilled = false;
-                }
-                childrenNames.push(input.value);
-            });
+        inputElements.forEach(function (input) {
+            if (input.value.trim() === "") {
+                allInputsFilled = false;
+            }
+            childrenNames.push(input.value);
+        });
 
         const errorMessage = document.getElementById("errorMessage");
         if (!allInputsFilled) {
@@ -110,7 +110,7 @@ function renderStartPage3() {
                 <br></br>
                 Hans vänner blev snabbt oroliga när de insåg att deras kära vän var i nöd. De befinner sig utspridda i Folkets Park och letar efter honungen. Hjälp Nalle Puh och hans vänner att hitta honungen genom att prata med dem. Nalle Puh tar emot all hjälp han kan få och följer gärna med dig eftersom han tror att du kan hjälpa honom extra mycket!</p>
                 <br></br>
-                <p>Börja resan hos I:or. Han <br> finns vid kiosken.</p>
+                <p>Börja resan hos I:or, han finns vid Kastanjekiosken.</p>
             </div>
             <div id="page3Section2">
                 <div id="honeyImg"></div>

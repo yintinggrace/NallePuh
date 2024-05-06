@@ -4,6 +4,8 @@ function renderHomePage() {
             <div id="home1">
                 <h1>Hej!</h1>
                 <p>Nalle Puh har tappat bort <br> sin favorithonung! Vad <br> ska han göra nu? Kan du <br> hjälpa honom?</p>
+                        <p>Hämta och skriv ut kartan:</p>
+
                 <button class="downloadMapBtn" data-map-path="../NallePuh/media/map.png">Hämta karta</button>
                 <img id="homeImg1" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
             </div>
@@ -54,7 +56,7 @@ function renderHomePage() {
             </div>
 
             <div id="home3">
-                <p>Hjälp Nalle Puh och hans vänner genom att genomföra skattjakten</p>
+                <p>Hjälp Nalle Puh och hans vänner genom att genomföra skattjakten.</p>
                 <button id="to-start">Starta</button>
             </div>
         </container>

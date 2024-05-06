@@ -51,7 +51,7 @@ function createResponse(currentContent) {
   if (questionType === "challenge") {
     const button = document.createElement("button");
     button.classList = "challenge-done";
-    button.innerText = "Klar med utmaning";
+    button.innerText = "Utmaning avklarad";
     responseContainer.appendChild(button);
 
     const challengeDoneButton = document.querySelector(".challenge-done");
@@ -81,11 +81,11 @@ function createResponse(currentContent) {
     });
   }
 
-    document.querySelectorAll(".alternative-button").forEach(button => {
-      button.addEventListener("click", (event) => {
-        checkAnswer(event, currentContent, "createAlternatives");
-      });
+  document.querySelectorAll(".alternative-button").forEach(button => {
+    button.addEventListener("click", (event) => {
+      checkAnswer(event, currentContent, "createAlternatives");
     });
+  });
 }
 
 function checkAnswer(event, currentContent, context) {
@@ -155,7 +155,7 @@ function renderLastStation() {
   let namesArray = JSON.parse(childrenNames);
 
   namesArray = namesArray.map(name =>
-      name.replace(/\b\w/g, char => char.toUpperCase())
+    name.replace(/\b\w/g, char => char.toUpperCase())
   );
 
   const lastQuestion = data.find(item => item.id === 6);
