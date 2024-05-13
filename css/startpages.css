@@ -115,6 +115,11 @@
     background-color: var(--orange);
 }
 
+#to-station {
+    position: relative;
+    top: 34%;
+}
+
 #page2Section2 input {
     padding: 20px;
 }

@@ -116,7 +116,6 @@ function renderStartPage3() {
                 <div id="honeyImg"></div>
             </div>
             <div id="page3Section3">
-                <button class="invisible"</button>
                 <button id="to-station">Börja</button>
             </div>
         </container>
