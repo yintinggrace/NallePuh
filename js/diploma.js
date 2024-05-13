@@ -3,7 +3,7 @@ function renderDownloadDiplomaPage() {
         <div class="diploma-container">
             <div class="diploma-nonprint">
                 <div class="diploma-content">
-                    <p class="appreciation">Tack för att ni har hjälpt till<span class="username"></span>! Vilka honungssparare! Nalle Puh vill visa sin uppskattning genom att ge er ett diplom. Skriv ert namn på diplomet efter att ni har skrivit ut det. Om du är en kurskamrat, var vänlig svara på enkäten.</p>
+                    <p class="appreciation">Tack för att ni har hjälpt till! Vilka hjältar! Nalle Puh vill visa sin uppskattning genom att ge er ett diplom. Skriv ert namn på diplomet efter att ni har skrivit ut det. Om du är en kurskamrat, var vänlig svara på enkäten.</p>
 
                     <button class="download-button">Hämta diplom</button>
                     <button target="_blank" onclick="window.open('https://forms.gle/So5uZyAh29ToTnJF7', '_blank');" class="go-to-form">Enkät</button>
