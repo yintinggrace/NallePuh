@@ -27,10 +27,10 @@ function renderDownloadDiplomaPage() {
 
 function handleDownloadButtonClick() {
     event.preventDefault();
-    const diplomaFilePath = "../NallePuh/media/diploma.png";
+    const diplomaFilePath = "../NallePuh/media/diploma.pdf";
     const anchorElement = document.createElement("a");
     anchorElement.href = diplomaFilePath;
     anchorElement.target = '_blank';
-    anchorElement.download = 'diplom.png';
+    anchorElement.download = 'diploma.pdf';
     anchorElement.click();
 }

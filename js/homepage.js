@@ -6,7 +6,7 @@ function renderHomePage() {
                 <p>Nalle Puh har tappat bort <br> sin favorithonung! Vad <br> ska han göra nu? Kan du <br> hjälpa honom?</p>
                         <p>Hämta och skriv ut kartan:</p>
 
-                <button class="downloadMapBtn" data-map-path="../NallePuh/media/map.png">Hämta karta</button>
+                <button class="downloadMapBtn" data-map-path="../NallePuh/media/map.pdf">Hämta karta</button>
                 <img id="homeImg1" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
             </div>
             <div class="deskop-header hidden">
@@ -15,7 +15,7 @@ function renderHomePage() {
                         <h1>Hej!</h1>
                         <p>Nalle Puh har tappat bort sin favorithonung! Vad ska han göra nu? Kan du hjälpa honom?</p>
                     </div>
-                    <button class="downloadMapBtn" data-map-path="../NallePuh/media/map.png">Hämta karta</button>
+                    <button class="downloadMapBtn" data-map-path="../NallePuh/media/map.pdf">Hämta karta</button>
                 </div>
                 <img class="deskop-header-right" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
             </div>
@@ -80,7 +80,7 @@ function renderHomePage() {
             const anchorElement = document.createElement("a");
             anchorElement.href = mapPath;
             anchorElement.target = '_blank';
-            anchorElement.download = 'map.png';
+            anchorElement.download = 'map.pdf';
             anchorElement.click();
         });
     });
