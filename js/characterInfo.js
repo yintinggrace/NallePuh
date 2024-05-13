@@ -1,5 +1,7 @@
 function renderCharacterInfo(characterName, originView) {
 
+    window.scrollTo(0, 0);
+
     document.querySelector("body").style.overflow = `hidden`;
 
     let questObject = {};
