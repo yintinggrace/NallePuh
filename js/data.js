@@ -137,7 +137,7 @@ const data = [{
         description: "Nasse är Nalle Puh bästa vän. Han är ofta bekymrad och rädd för nästan allt. Däremot ställer han alltid upp för sina vänner. Nasse älskar clownföreställningar. Han blir lugn när han är nära clowner.",
     },
     tipsFromPreviousCharacter: "Nasse letar efter clownen i parken. Om du hjälper honom att hitta clownen kanske han kan ge dig ett tips!",
-    tipsFromCurrentCharacter: "Tack för hjälpen! Jag är en gris och vi har väldigt bra luktsinne. Vänta lite, det luktar som att honungen kanske är uppe vid kullen bakom barnens scen.",
+    tipsFromCurrentCharacter: "Tack för hjälpen! Visste du att vi grisar har väldigt bra luktsinne? Vänta lite, det luktar som att honungen kan vara uppe vid kullen bakom barnens scen.",
     nameOfPreviousCharacter: "Tiger",
     locationImg: "../media/location-clownen.jpg",
     locationName: "Clownen"
