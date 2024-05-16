@@ -88,6 +88,8 @@
 
 .congrats-description {
   margin-top: 30px;
+  font-size: 2vh;
+  line-height: var(--lineHeight);
 }
 
 .alternatives-container {
