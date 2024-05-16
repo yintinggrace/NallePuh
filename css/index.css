@@ -32,4 +32,5 @@ button {
 
 p {
     line-height: var(--lineHeight);
+    font-size: 2vh;
 }
