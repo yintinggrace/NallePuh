@@ -7,7 +7,7 @@ function renderHomePage() {
                         <p>Hämta och skriv ut kartan:</p>
 
                 <button class="downloadMapBtn" data-map-path="../NallePuh/media/map.pdf">Hämta karta</button>
-                <img id="homeImg1" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
+                <img id="homeImg1" src="../NallePuh/media/nalle-puh-homepage.png" alt="Nalle Puh"></img>
             </div>
             <div class="deskop-header hidden">
                 <div class="deskop-header-left">
