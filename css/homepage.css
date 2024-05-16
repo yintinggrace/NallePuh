@@ -42,7 +42,7 @@
     background-color: var(--orange);
     margin-top: 4vh;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--buttonRadius);
     font-size: clamp(16px, 2vw, 20px);
     font-weight: 500;
 }
@@ -142,16 +142,17 @@
 
 #to-start {
     background-color: var(--orange);
-    height: 24%;
+    height: var(--buttonHeight);
     font-size: 2vh;
     font-weight: 500;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--buttonRadius);
 }
 
 @media screen and (min-width: 769px) {
     #scrollContainer {
         justify-content: center;
+        height: 170px;
     }
 
     #home1 {
@@ -171,7 +172,7 @@
         display: flex;
         justify-content: center;
         align-items: end;
-        margin: 30px;
+        margin: 0 30px 30px;
         gap: 50px;
     }
 
