@@ -10,7 +10,7 @@ function renderDownloadDiplomaPage() {
                     <button class="go-home">Tillbaka till startsidan</button>
                 </div>
 
-                <img class="diploma-nalle-puh" src="../NallePuh/media/diploma-nalle-puh.png" alt="Nalle Puh">
+                <img class="crown" src="../NallePuh/media/crown.png"" alt="Nalle Puh">
             </div>
         </div>
     `;

@@ -38,7 +38,7 @@ body {
     height: var(--buttonHeight);
     width: 100%;
     border: none;
-    border-radius: 10px;
+    border-radius: var(--buttonRadius);
     box-shadow: none;
     font-size: 2vh;
 }

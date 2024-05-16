@@ -13,17 +13,17 @@
 .download-button,
 .go-home,
 .go-to-form {
-    height: 50px;
+    height: var(--buttonHeight);
     width: 100%;
     font-size: 2vh;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--buttonRadius);
     margin-top: 15px;
     background-color: var(--orange);
 }
 
-.diploma-nalle-puh {
-    height: 300px;
+.crown {
+    height: 220px;
     width: 300px;
     position: absolute;
     right: 30px;
