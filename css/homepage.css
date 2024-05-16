@@ -26,10 +26,11 @@
     flex-direction: column;
 }
 
-#home1>p {
+#home1 > p {
     position: relative;
     top: 8%;
     margin-top: 0;
+    font-size: 2vh;
 }
 
 .hidden {
@@ -81,7 +82,7 @@
     gap: 15px;
 }
 
-#scrollContainer>p {
+#scrollContainer > p {
     text-align: center;
 }
 
@@ -91,11 +92,11 @@
     text-align: center;
 }
 
-.scrollImg>p {
+.scrollImg > p {
     margin-top: 10px;
 }
 
-.scrollImg>div {
+.scrollImg > div {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -114,11 +115,11 @@
 }
 
 
-#scrollContainer> :last-child {
+#scrollContainer > :last-child {
     padding-right: 25px;
 }
 
-#scrollContainer> :first-child {
+#scrollContainer > :first-child {
     padding-left: 25px;
 }
 
@@ -131,7 +132,7 @@
     justify-content: center;
 }
 
-#home3>p {
+#home3 > p {
     position: relative;
     bottom: 6%;
 }
