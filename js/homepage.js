@@ -23,31 +23,31 @@ function renderHomePage() {
                 <div id="home2Box">
                     <h2>Om Nalle Puh och hans vänner</h2>
                     <div id="scrollContainer">
-                        <div class="scrollImg">
+                        <div class="scrollImg container-character-nalle-puh">
                             <img class="character-nalle-puh" src="../NallePuh/media/character-nalle-puh.png" alt="Nalle Puh">
                             <p>Nalle Puh</p>
                         </div>
-                        <div class="scrollImg">
+                        <div class="scrollImg container-character-I-or">
                             <img class="character-I-or" src="../NallePuh/media/character-i-or.png" alt="I-or">
                             <p>I-or</p>
                         </div>
-                        <div class="scrollImg">
+                        <div class="scrollImg container-character-Tiger">
                             <img class="character-Tiger" src="../NallePuh/media/character-tiger.png" alt="Tiger">
                             <p>Tiger</p>
                         </div>
-                        <div class="scrollImg">
+                        <div class="scrollImg container-character-Nasse">
                             <img class="character-Nasse" src="../NallePuh/media/character-nasse.png" alt="Nasse">
                             <p>Nasse</p>
                         </div>
-                        <div class="scrollImg">
+                        <div class="scrollImg container-character-Kanin">
                             <img class="character-Kanin" src="../NallePuh/media/character-kanin.png" alt="Kanin">
                             <p>Kanin</p>
                         </div>
-                        <div class="scrollImg">
+                        <div class="scrollImg container-character-Ru">
                             <img class="character-Ru" src="../NallePuh/media/character-ru.png" alt="Ru">
                             <p>Ru</p>
                         </div>
-                        <div class="scrollImg">
+                        <div class="scrollImg container-character-Christoffer-Robin">
                             <img class="character-Christoffer-Robin" src="../NallePuh/media/character-christoffer-robin.png" alt="Christoffer Robin">
                             <p>Christoffer-Robin</p>
                         </div>
