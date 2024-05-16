@@ -17,7 +17,7 @@ function renderHomePage() {
                     </div>
                     <button class="downloadMapBtn" data-map-path="../NallePuh/media/map.pdf">Hämta karta</button>
                 </div>
-                <img class="deskop-header-right" src="../NallePuh/media/nalle-puh-1.png" alt="Nalle Puh"></img>
+                <img class="deskop-header-right" src="../NallePuh/media/nalle-puh-homepage.png" alt="Nalle Puh"></img>
             </div>
             <div id="home2">
                 <div id="home2Box">
