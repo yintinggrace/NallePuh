@@ -42,10 +42,14 @@
 }
 
 @media screen and (min-width: 769px) {
+    .appreciation {
+        width: 60%;
+    }
 
     .download-button,
-    .go-home {
-        width: 300px;
+    .go-home,
+    .go-to-form {
+        width: 40%;
     }
 
     .diploma-content {

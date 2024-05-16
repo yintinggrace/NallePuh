@@ -124,4 +124,8 @@
   .challenge-done {
     width: 400px;
   }
+
+  .final-station-container {
+      width: 80%;
+  }
 }
