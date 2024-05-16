@@ -1,5 +1,4 @@
 function renderCurrentLocationView(currentContent) {
-    body.style.overflow = `hidden`;
 
     body.innerHTML = `
         <div id="closeBtn"></div>
