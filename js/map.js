@@ -1,5 +1,8 @@
 function renderCurrentLocationView(currentContent) {
 
+    // body.style.overflow = `hidden`;
+
+
     body.innerHTML = `
         <div id="closeBtn"></div>
         <p class="currentLocationName-desktop"></p>
@@ -12,8 +15,13 @@ function renderCurrentLocationView(currentContent) {
         </div>
     `;
 
+    body.style.height = `75vh`;
+
+
     document.querySelector("#closeBtn").addEventListener("click", () => {
+        body.style.height = `100vh`;
         body.style.overflow = `auto`;
+
         handleToStationClick();
     });
 
@@ -36,7 +44,7 @@ function renderCurrentLocationView(currentContent) {
 }
 
 function renderFullscreenMap(currentContent) {
-    body.style.overflow = `hidden`;
+
 
     body.innerHTML = `
         <div id="closeBtn"></div>

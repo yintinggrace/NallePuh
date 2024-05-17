@@ -17,11 +17,11 @@
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    height: 90vh;
+    height: 70vh;
     width: 100vw;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 #currentLocation {
@@ -30,13 +30,13 @@
 
 #smallMap {
     height: 40vh;
-    width: 80vw;
+    width: 85vw;
     border-radius: 20px;
 }
 
 #currentLocationImg {
-    height: 25vh;
-    width: 80vw;
+    height: 30vh;
+    width: 85vw;
     border-radius: 20px;
     background-position: center;
     background-size: cover;
@@ -75,6 +75,6 @@
     }
 
     .currentLocationName-mobile {
-    display: none;
-}
+        display: none;
+    }
 }
